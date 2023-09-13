@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 //using UnityEngine.EventSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -171,6 +172,7 @@ public class PlayerController : MonoBehaviour
     
     public void restartButton()
     {
+        SceneManager.LoadScene("SampleScene");
         print("Restart Button Pressed");
     }
 
