@@ -19,10 +19,11 @@ public class HealthController : MonoBehaviour
     // FixedUpdate is called once every .02 seconds
     void FixedUpdate()
     {
+        maxHealthCheck();
         killPlayer();
     }
 
-    bool isDead()
+    bool isDead() //checks to see if the player should be dead
     {
         if(health <= 0)
         {
@@ -33,17 +34,17 @@ public class HealthController : MonoBehaviour
         return false;
     }
 
-    public void takeDamage(int damage)
+    public void takeDamage(int damage) //for taking damage
     {
         health = health - damage;
     }
 
-    public void takeHeal(int heal)
+    public void takeHeal(int heal) //for healing or increasing health
     {
         health += heal;
     }
 
-    void killPlayer()
+    void killPlayer() //kills player is they are supposed to be dead, disables controls, and bring up DeathMenu
     {
         if(isDead())
         {
@@ -54,5 +55,13 @@ public class HealthController : MonoBehaviour
             //gameObject.GetComponent<HealthController>().enabled = false;
         }
         
+    }
+
+    void maxHealthCheck()  //checks to see if player is over maxHealth, and will set health=maxhealth if this happens
+    {
+        if(health > maxHealth)
+        {
+            health = maxHealth;
+        }
     }
 }
