@@ -151,6 +151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: doorway
       objectReference: {fileID: 0}
+    - target: {fileID: 237368805003116681, guid: 9db63a03636194a5390911bd663c898e, type: 3}
+      propertyPath: m_Name
+      value: doorTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 577076854880221385, guid: 9db63a03636194a5390911bd663c898e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
