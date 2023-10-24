@@ -360,9 +360,14 @@
 -analyzer:"/home/pasquale/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/home/pasquale/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/DoorController.cs"
-"Assets/Scripts/HealthController.cs"
 "Assets/Scripts/HealthPickup.cs"
+"Assets/Scripts/Interfaces/HealthController.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/PlayerHealthController.cs"
+"Assets/Scripts/barrel.cs"
+"Assets/Scripts/debugBullet.cs"
+"Assets/Scripts/debugGun.cs"
+"Assets/Scripts/proceduralGenerationSystem.cs"
 "Assets/StarterAssets/FirstPersonController/Scripts/BasicRigidBodyPush.cs"
 "Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs"
 "Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs"
@@ -406,7 +411,6 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
-"Assets/proceduralGenerationSystem.cs"
 -langversion:9.0
 
 /deterministic
