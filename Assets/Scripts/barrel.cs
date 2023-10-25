@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class barrel : MonoBehaviour, HealthController
 {
+    [SerializeField] private AudioClip clip;
+
     public int health;
     public int maxHealth = 10;
 
-    //public GameObject explosionEffect;
+    public GameObject explosionEffect;
     public float radius = 5f;
     public float explosionForce = 10000f;
 
@@ -24,7 +26,7 @@ public class barrel : MonoBehaviour, HealthController
         kill();
     }
 
-    public bool isDead() //checks to see if the player should be dead
+    public bool isDead() //checks to see if should be dead
     {
         if(health <= 0)
         {
@@ -45,10 +47,11 @@ public class barrel : MonoBehaviour, HealthController
         print("You can't heal a barrel, you idiot!");
     }
 
-    public void kill() //kills player is they are supposed to be dead, disables controls, and bring up DeathMenu
+    public void kill() 
     {
         if(isDead())
         {
+            AudioSource.PlayClipAtPoint(clip, GameObject.Find("Player").transform.position, 1.0f);
             explode();
         }
         
@@ -56,7 +59,7 @@ public class barrel : MonoBehaviour, HealthController
 
     void explode()
     {
-        //GameObject spawnedEffect = Instantiate(explosionEffect, gameObject.transform.position, gameObject.transform.rotation);
+        GameObject spawnedEffect = Instantiate(explosionEffect, gameObject.transform.position, gameObject.transform.rotation);
         Collider[] colliders = Physics.OverlapSphere(gameObject.transform.position, radius);
 
         for (int i = 0; i < colliders.Length; i++)
@@ -67,8 +70,8 @@ public class barrel : MonoBehaviour, HealthController
             }
         }
 
+        Destroy(spawnedEffect , 1f);
         Destroy(gameObject);
-        //Destroy(spawnedEffect , 1f);
     }
 
     public void maxHealthCheck()  //checks to see if health is over maxHealth, and will set health=maxhealth if this happens

@@ -136,7 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78dd76fe3b874f04af7715afc250081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 633189e4737b958ba94681353474625b, type: 3}
   health: 0
   maxHealth: 10
+  explosionEffect: {fileID: 6158501333482204560, guid: 17b587091b19979f589ec65c083a4ce0, type: 3}
   radius: 5
   explosionForce: 10000
