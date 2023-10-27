@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPickup : MonoBehaviour
+public class HealthPickup : MonoBehaviour, Pickup
 {
     HealthController healthController;
     int healAmount = 20;
@@ -19,12 +19,12 @@ public class HealthPickup : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision col)
     {
-        if(collision.gameObject.GetComponent<HealthController>() != null)
+        if(col.gameObject.GetComponent<HealthController>() != null)
         {
             print("Health has been picked up");
-            healthController = collision.gameObject.GetComponent<HealthController>();
+            healthController = col.gameObject.GetComponent<HealthController>();
             healthController.takeHeal(healAmount);
             Destroy(gameObject);
         }
