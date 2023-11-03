@@ -10,9 +10,9 @@ Available memory:        32002 MB
 Using pre-set license
 Pro License: YES
 
-(Unity:205627): Gtk-CRITICAL **: 14:21:19.772: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
+(Unity:247967): Gtk-CRITICAL **: 19:07:16.525: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
 
-(Unity:205627): GLib-GObject-CRITICAL **: 14:21:19.772: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+(Unity:247967): GLib-GObject-CRITICAL **: 19:07:16.525: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
 Desktop is 4480 x 1440 @ 60 Hz
 Initialize udev device monitor.
 
@@ -28,7 +28,7 @@ AssetImportWorker4
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-37605
+37999
 Successfully changed project path to: /home/pasquale/Documents/Portfolio Game
 /home/pasquale/Documents/Portfolio Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -62,12 +62,12 @@ Successfully changed project path to: /home/pasquale/Documents/Portfolio Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [139707661558528] Host "[IP] 192.168.1.47 [Port] 0 [Flags] 2 [Guid] 1410919291 [EditorId] 1410919291 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.47) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [139640248840960] Host "[IP] 192.168.1.47 [Port] 0 [Flags] 2 [Guid] 658914590 [EditorId] 658914590 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.47) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [139707661558528] Host "[IP] 192.168.1.47 [Port] 0 [Flags] 2 [Guid] 1410919291 [EditorId] 1410919291 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.47) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [139640248840960] Host "[IP] 192.168.1.47 [Port] 0 [Flags] 2 [Guid] 658914590 [EditorId] 658914590 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.47) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 31 workers.
-Refreshing native plugins compatible for Editor in 1.54 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 8.93 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.8f1 (b5eafc012955)
 [Subsystems] Discovering subsystems at path /home/pasquale/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -84,13 +84,13 @@ clamp GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessel
 buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ATI_blend_equation_separate GL_ATI_meminfo GL_ATI_texture_float GL_ATI_texture_mirror_once GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_debug_label GL_EXT_demote_to_helper_invocation GL_EXT_depth_bounds_test GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_image_load_formatted GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc
  GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_mirror_clamp GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_RG8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NVX_gpu_memory_info GL_NV_alpha_to_coverage_dither_control GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_packed_depth_stencil GL_NV_shader_atomic_in
 t64 GL_NV_texture_barrier GL_NV_vdpau_interop GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 454714032
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1337868592
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Initialize mono
 Mono path[0] = '/home/pasquale/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Managed'
 Mono path[1] = '/home/pasquale/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/pasquale/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56627
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56967
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/pasquale/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -99,37 +99,37 @@ Platform support module is not available: /home/pasquale/Unity/Hub/Editor/2022.3
 Trying to register platform support module: /home/pasquale/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll (that doesn't exist). Retrying without overrides.
 Platform support module is not available: /home/pasquale/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /home/pasquale/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.007194 seconds.
-- Loaded All Assemblies, in  0.235 seconds
+Registered in 0.007575 seconds.
+- Loaded All Assemblies, in  0.253 seconds
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.223 seconds
-Domain Reload Profiling: 458ms
-	BeginReloadAssembly (54ms)
+- Finished resetting the current domain, in  0.226 seconds
+Domain Reload Profiling: 479ms
+	BeginReloadAssembly (69ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (26ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (27ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (102ms)
-		LoadAssemblies (54ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (103ms)
+		LoadAssemblies (69ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (101ms)
-			TypeCache.Refresh (100ms)
+		AnalyzeDomain (102ms)
+			TypeCache.Refresh (101ms)
 				TypeCache.ScanAssembly (91ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (224ms)
+	FinalizeReload (226ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (176ms)
+		SetupLoadedEditorAssemblies (177ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (4ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
 			ProcessInitializeOnLoadAttributes (99ms)
@@ -141,8 +141,8 @@ Domain Reload Profiling: 458ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.410 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.439 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -150,460 +150,245 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.661 seconds
-Domain Reload Profiling: 1071ms
-	BeginReloadAssembly (95ms)
+- Finished resetting the current domain, in  0.675 seconds
+Domain Reload Profiling: 1109ms
+	BeginReloadAssembly (91ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (26ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (27ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (250ms)
-		LoadAssemblies (163ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (276ms)
+		LoadAssemblies (195ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (128ms)
-			TypeCache.Refresh (105ms)
+		AnalyzeDomain (121ms)
+			TypeCache.Refresh (99ms)
 				TypeCache.ScanAssembly (89ms)
 			ScanForSourceGeneratedMonoScriptInfo (14ms)
 			ResolveRequiredComponents (8ms)
-	FinalizeReload (661ms)
+	FinalizeReload (675ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (534ms)
+		SetupLoadedEditorAssemblies (548ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (32ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (46ms)
-			ProcessInitializeOnLoadAttributes (409ms)
+			BeforeProcessingInitializeOnLoad (45ms)
+			ProcessInitializeOnLoadAttributes (424ms)
 			ProcessInitializeOnLoadMethodAttributes (41ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (3ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3974 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 74 unused Assets / (113.3 KB). Loaded Objects now: 4463.
-Memory consumption went from 259.9 MB to 259.8 MB.
-Total: 5.006182 ms (FindLiveObjects: 0.286390 ms CreateObjectMapping: 0.276090 ms MarkObjects: 4.156352 ms  DeleteObjects: 0.286740 ms)
+Unloading 3977 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 74 unused Assets / (113.3 KB). Loaded Objects now: 4466.
+Memory consumption went from 260.0 MB to 259.9 MB.
+Total: 4.726532 ms (FindLiveObjects: 0.232790 ms CreateObjectMapping: 0.137260 ms MarkObjects: 4.105482 ms  DeleteObjects: 0.250370 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
   custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 205139.736475 seconds.
-  path: Assets/Prefabs/ParticleSystems
-  artifactKey: Guid(cda37efe35ec80916b7a3b7f6dba23b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ParticleSystems using Guid(cda37efe35ec80916b7a3b7f6dba23b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd4bfcd9adaf07746a13bd52c5548d5c') in 0.001509 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 74.609942 seconds.
-  path: Assets/Prefabs/ParticleSystems/FireBig.prefab
-  artifactKey: Guid(90248d9a876cde013b0e16c5fac337a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ParticleSystems/FireBig.prefab using Guid(90248d9a876cde013b0e16c5fac337a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7918407be9b631e5580ecb6fb82afb0e') in 0.231422 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 22.838967 seconds.
-  path: Assets/Materials/railGun.mat
-  artifactKey: Guid(20e6dea165df608f499f4c82e585e969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/railGun.mat using Guid(20e6dea165df608f499f4c82e585e969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c284c497497d34a5729a184516f6ea4') in 0.026792 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Materials/rocketLauncher.mat
-  artifactKey: Guid(82cf4a5a5af66b24b8bce8f9fee87d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/rocketLauncher.mat using Guid(82cf4a5a5af66b24b8bce8f9fee87d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45debceccc8bea8f262e54e92043393c') in 0.004310 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Materials/shotGun.mat
-  artifactKey: Guid(62235e476b564f25096de0a97b126a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/shotGun.mat using Guid(62235e476b564f25096de0a97b126a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c182c5ba47e6f785870b5d1c4767150') in 0.004396 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.642493 seconds.
-  path: Assets/Materials/Fire.mat
-  artifactKey: Guid(f9665e3d66707cb8fae1f2534580a283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Fire.mat using Guid(f9665e3d66707cb8fae1f2534580a283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef14506463c284b0fc94435717c8dc3') in 0.005189 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 93.798766 seconds.
-  path: Assets/Prefabs/ParticleSystems/FireBig.prefab
-  artifactKey: Guid(90248d9a876cde013b0e16c5fac337a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ParticleSystems/FireBig.prefab using Guid(90248d9a876cde013b0e16c5fac337a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8682648206b4bc3a86959f590c39b14') in 0.010122 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.334 seconds
-Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.301 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.065 seconds
-Domain Reload Profiling: 1399ms
-	BeginReloadAssembly (115ms)
+- Finished resetting the current domain, in  0.795 seconds
+Domain Reload Profiling: 1095ms
+	BeginReloadAssembly (108ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (165ms)
-		LoadAssemblies (186ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (134ms)
+		LoadAssemblies (163ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (20ms)
-			TypeCache.Refresh (6ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (4ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1065ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (796ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (514ms)
+		SetupLoadedEditorAssemblies (526ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
+			InitializePlatformSupportModulesInManaged (35ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (385ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (398ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.46 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3814 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.4 KB). Loaded Objects now: 4559.
-Memory consumption went from 233.7 MB to 233.6 MB.
-Total: 4.683662 ms (FindLiveObjects: 0.319180 ms CreateObjectMapping: 0.209180 ms MarkObjects: 4.084012 ms  DeleteObjects: 0.070450 ms)
+Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (111.4 KB). Loaded Objects now: 4482.
+Memory consumption went from 230.9 MB to 230.8 MB.
+Total: 4.253862 ms (FindLiveObjects: 0.253080 ms CreateObjectMapping: 0.150910 ms MarkObjects: 3.767782 ms  DeleteObjects: 0.081560 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
   custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 431.950903 seconds.
-  path: Assets/Prefabs/Weapons/rocketLauncher.prefab
-  artifactKey: Guid(ed6f6bbc1885ab45e95476d18245dea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/rocketLauncher.prefab using Guid(ed6f6bbc1885ab45e95476d18245dea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22dee52117f2e89f8c1856146ad6c73a') in 0.205151 seconds
+  Time since last request: 261796.187192 seconds.
+  path: Assets/vsauce 1.fbx
+  artifactKey: Guid(3ec9e8f383af9893484621417ad4d47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vsauce 1.fbx using Guid(3ec9e8f383af9893484621417ad4d47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2ace89cb777d3bdabfd2a0e3b00f33') in 0.283342 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 76
+Number of asset objects unloaded after import = 108
 ========================================================================
 Received Import Request.
-  Time since last request: 4.337787 seconds.
-  path: Assets/Prefabs/Weapons/railGun.prefab
-  artifactKey: Guid(423023f7bc101e29f87844c18e5dbb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/railGun.prefab using Guid(423023f7bc101e29f87844c18e5dbb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b496ecb166add6470f7b966ee6bd0854') in 0.008495 seconds
+  Time since last request: 9.369219 seconds.
+  path: Assets/vsauce.fbx
+  artifactKey: Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vsauce.fbx using Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b06e084ee1c86d150d699f1f6bf75a4') in 0.018640 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
+Number of asset objects unloaded after import = 90
 ========================================================================
 Received Import Request.
-  Time since last request: 3.148645 seconds.
-  path: Assets/Prefabs/Weapons/railGun.prefab
-  artifactKey: Guid(423023f7bc101e29f87844c18e5dbb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/railGun.prefab using Guid(423023f7bc101e29f87844c18e5dbb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b95b636c8a3431a471ee7b41d04dd81') in 0.006233 seconds
+  Time since last request: 26.056983 seconds.
+  path: Assets/vsauce.fbx
+  artifactKey: Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vsauce.fbx using Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba8133986b35ab55a86e41bea92cabc6') in 0.018766 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
+Number of asset objects unloaded after import = 90
+========================================================================
+Received Import Request.
+  Time since last request: 46.464441 seconds.
+  path: Assets/vsauce.controller
+  artifactKey: Guid(3558d7dd19ec604be95f72bb7397a28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vsauce.controller using Guid(3558d7dd19ec604be95f72bb7397a28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f38d26689872206e863be0a9334348f') in 0.001232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 41.262086 seconds.
+  path: Assets/vsauce.fbx
+  artifactKey: Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vsauce.fbx using Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd6c063cb7d012789d7618532787410') in 0.016725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 90
+========================================================================
+Received Import Request.
+  Time since last request: 12.071101 seconds.
+  path: Assets/vsauce.fbx
+  artifactKey: Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vsauce.fbx using Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1edcc75e64fd741dbb4ef9e52f0481ca') in 0.017044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 90
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.325 seconds
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.293 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.784 seconds
-Domain Reload Profiling: 1109ms
-	BeginReloadAssembly (110ms)
+- Finished resetting the current domain, in  0.796 seconds
+Domain Reload Profiling: 1089ms
+	BeginReloadAssembly (108ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (33ms)
 	RebuildCommonClasses (26ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (160ms)
-		LoadAssemblies (165ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (20ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (785ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (526ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (396ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3814 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.5 KB). Loaded Objects now: 4612.
-Memory consumption went from 233.8 MB to 233.7 MB.
-Total: 3.838392 ms (FindLiveObjects: 0.310380 ms CreateObjectMapping: 0.091930 ms MarkObjects: 3.368762 ms  DeleteObjects: 0.066420 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 112.035800 seconds.
-  path: Assets/Prefabs/Weapons/Projectiles/rocket.prefab
-  artifactKey: Guid(96fa7a30d69531e3685cea6fdc4b20d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/Projectiles/rocket.prefab using Guid(96fa7a30d69531e3685cea6fdc4b20d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603420974c30158bc7cf8033482a2b63') in 0.204447 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 66
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.313 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.809 seconds
-Domain Reload Profiling: 1121ms
-	BeginReloadAssembly (115ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (141ms)
-		LoadAssemblies (169ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (13ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (809ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (531ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (399ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3814 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.4 KB). Loaded Objects now: 4664.
-Memory consumption went from 233.9 MB to 233.8 MB.
-Total: 3.756701 ms (FindLiveObjects: 0.238380 ms CreateObjectMapping: 0.090980 ms MarkObjects: 3.352261 ms  DeleteObjects: 0.074440 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 105.351367 seconds.
-  path: Assets/Prefabs/Weapons/Projectiles/rocket.prefab
-  artifactKey: Guid(96fa7a30d69531e3685cea6fdc4b20d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/Projectiles/rocket.prefab using Guid(96fa7a30d69531e3685cea6fdc4b20d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b71e4f5c4167697189bbb97a78804d1') in 0.202522 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 66
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.307 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.792 seconds
-Domain Reload Profiling: 1100ms
-	BeginReloadAssembly (109ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (143ms)
-		LoadAssemblies (170ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (131ms)
+		LoadAssemblies (156ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (15ms)
 			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (793ms)
+	FinalizeReload (797ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (517ms)
+		SetupLoadedEditorAssemblies (532ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
+			InitializePlatformSupportModulesInManaged (28ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (388ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (409ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3814 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.5 KB). Loaded Objects now: 4716.
+Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (111.5 KB). Loaded Objects now: 4580.
 Memory consumption went from 234.0 MB to 233.9 MB.
-Total: 4.609872 ms (FindLiveObjects: 0.307770 ms CreateObjectMapping: 0.191880 ms MarkObjects: 4.035622 ms  DeleteObjects: 0.073930 ms)
+Total: 4.309532 ms (FindLiveObjects: 0.238320 ms CreateObjectMapping: 0.112520 ms MarkObjects: 3.897332 ms  DeleteObjects: 0.060580 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
   custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.313 seconds
+- Loaded All Assemblies, in  0.306 seconds
 Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
@@ -612,452 +397,221 @@ Native extension for WebGL target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.801 seconds
-Domain Reload Profiling: 1114ms
-	BeginReloadAssembly (107ms)
+Domain Reload Profiling: 1107ms
+	BeginReloadAssembly (113ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (27ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (148ms)
-		LoadAssemblies (177ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (134ms)
+		LoadAssemblies (164ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (802ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (532ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (406ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (111.7 KB). Loaded Objects now: 4596.
+Memory consumption went from 233.9 MB to 233.8 MB.
+Total: 4.160192 ms (FindLiveObjects: 0.294030 ms CreateObjectMapping: 0.074440 ms MarkObjects: 3.726042 ms  DeleteObjects: 0.065020 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.295 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.784 seconds
+Domain Reload Profiling: 1079ms
+	BeginReloadAssembly (102ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (138ms)
+		LoadAssemblies (165ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (14ms)
 			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (801ms)
+	FinalizeReload (784ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (527ms)
+		SetupLoadedEditorAssemblies (520ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
+			InitializePlatformSupportModulesInManaged (28ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (396ms)
+			ProcessInitializeOnLoadAttributes (399ms)
 			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3814 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.5 KB). Loaded Objects now: 4732.
+Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (111.7 KB). Loaded Objects now: 4612.
 Memory consumption went from 233.9 MB to 233.8 MB.
-Total: 4.768133 ms (FindLiveObjects: 0.289451 ms CreateObjectMapping: 0.159720 ms MarkObjects: 4.244562 ms  DeleteObjects: 0.073700 ms)
+Total: 4.431112 ms (FindLiveObjects: 0.246370 ms CreateObjectMapping: 0.139340 ms MarkObjects: 3.983852 ms  DeleteObjects: 0.060770 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
   custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 136.536678 seconds.
-  path: Assets/Prefabs/Weapons/shotGun.prefab
-  artifactKey: Guid(3e55e866ea6a99362b8c38903a721777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/shotGun.prefab using Guid(3e55e866ea6a99362b8c38903a721777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0305d8081674460670ed6cf521b0e280') in 0.200255 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 54
-========================================================================
-Received Import Request.
-  Time since last request: 6.476351 seconds.
-  path: Assets/Prefabs/Weapons/shotGun.prefab
-  artifactKey: Guid(3e55e866ea6a99362b8c38903a721777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/shotGun.prefab using Guid(3e55e866ea6a99362b8c38903a721777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4e967f89d55e662ef099dc1c4b14ca') in 0.006224 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.311 seconds
-Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.301 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.820 seconds
-Domain Reload Profiling: 1130ms
-	BeginReloadAssembly (110ms)
+- Finished resetting the current domain, in  0.790 seconds
+Domain Reload Profiling: 1091ms
+	BeginReloadAssembly (107ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (27ms)
+	RebuildCommonClasses (28ms)
 	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (145ms)
-		LoadAssemblies (173ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (167ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (15ms)
 			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (820ms)
+	FinalizeReload (790ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (540ms)
+		SetupLoadedEditorAssemblies (524ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
+			InitializePlatformSupportModulesInManaged (33ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (407ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3814 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.5 KB). Loaded Objects now: 4784.
-Memory consumption went from 234.1 MB to 234.0 MB.
-Total: 4.564292 ms (FindLiveObjects: 0.328610 ms CreateObjectMapping: 0.171540 ms MarkObjects: 3.993802 ms  DeleteObjects: 0.069790 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 311.687279 seconds.
-  path: Assets/Materials/barrel.mat
-  artifactKey: Guid(656499553adb84866ac3e04856ec93d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/barrel.mat using Guid(656499553adb84866ac3e04856ec93d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc5cd95071721855027450a167610b5') in 0.222130 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Materials/door.mat
-  artifactKey: Guid(141c066ce19570b5ca03b3d8594a8e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/door.mat using Guid(141c066ce19570b5ca03b3d8594a8e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '688b18cca9c69de959ad04ba3ba5380c') in 0.004911 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Materials/health.mat
-  artifactKey: Guid(c441dab1c3934cebdba35b0cda7c4d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/health.mat using Guid(c441dab1c3934cebdba35b0cda7c4d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6219b2d9420dd6861626eeb40a4d9405') in 0.004523 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3956.762554 seconds.
-  path: Assets/Scripts/Pickups/pistolPickup.cs
-  artifactKey: Guid(41a69c0e53fc3cdc19150578c6a79b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Pickups/pistolPickup.cs using Guid(41a69c0e53fc3cdc19150578c6a79b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c90d382dd3cd31723ffc2b4151d0304') in 0.000316 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 39.616281 seconds.
-  path: Assets/Scripts/Pickups/railGunPickup.cs
-  artifactKey: Guid(ace8860c143e8b81d85f1dc7c5fa9ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Pickups/railGunPickup.cs using Guid(ace8860c143e8b81d85f1dc7c5fa9ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf92a30865f68068884fa44244bad5eb') in 0.000588 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.340 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.828 seconds
-Domain Reload Profiling: 1167ms
-	BeginReloadAssembly (125ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (158ms)
-		LoadAssemblies (163ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (21ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (828ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (553ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (50ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (52ms)
-			ProcessInitializeOnLoadAttributes (404ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (396ms)
 			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3815 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.5 KB). Loaded Objects now: 4837.
-Memory consumption went from 234.2 MB to 234.1 MB.
-Total: 3.825092 ms (FindLiveObjects: 0.315100 ms CreateObjectMapping: 0.093630 ms MarkObjects: 3.351432 ms  DeleteObjects: 0.064340 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 17.117749 seconds.
-  path: Assets/Scripts/Pickups/rocketLauncherPickup.cs
-  artifactKey: Guid(2298874d711fc5740bc8d761efdfd706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Pickups/rocketLauncherPickup.cs using Guid(2298874d711fc5740bc8d761efdfd706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60d2c794cdd3e21d6d65506c97baa949') in 0.001637 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.363 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.806 seconds
-Domain Reload Profiling: 1168ms
-	BeginReloadAssembly (114ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (169ms)
-		LoadAssemblies (175ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (21ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (806ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (532ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (399ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3816 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.7 KB). Loaded Objects now: 4854.
-Memory consumption went from 234.1 MB to 234.0 MB.
-Total: 3.843662 ms (FindLiveObjects: 0.321440 ms CreateObjectMapping: 0.094280 ms MarkObjects: 3.362492 ms  DeleteObjects: 0.064880 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 30.208880 seconds.
-  path: Assets/Scripts/Pickups/shotGunPickup.cs
-  artifactKey: Guid(0ff8b8e8856ca9f82b758b88f80e5e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Pickups/shotGunPickup.cs using Guid(0ff8b8e8856ca9f82b758b88f80e5e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0653c0c974771abd8d48a47ecbd84118') in 0.001487 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.313 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.788 seconds
-Domain Reload Profiling: 1100ms
-	BeginReloadAssembly (103ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (155ms)
-		LoadAssemblies (160ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (21ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (788ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (526ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (396ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.5 KB). Loaded Objects now: 4871.
-Memory consumption went from 234.2 MB to 234.1 MB.
-Total: 6.905653 ms (FindLiveObjects: 0.248150 ms CreateObjectMapping: 0.094810 ms MarkObjects: 6.492643 ms  DeleteObjects: 0.069320 ms)
+Unloading 35 unused Assets / (111.8 KB). Loaded Objects now: 4628.
+Memory consumption went from 233.9 MB to 233.8 MB.
+Total: 4.397502 ms (FindLiveObjects: 0.213980 ms CreateObjectMapping: 0.106500 ms MarkObjects: 4.012932 ms  DeleteObjects: 0.063200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
   custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.505965 seconds.
-  path: Assets/Scripts/Pickups/shotGunPickup.cs
-  artifactKey: Guid(0ff8b8e8856ca9f82b758b88f80e5e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Pickups/shotGunPickup.cs using Guid(0ff8b8e8856ca9f82b758b88f80e5e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbde4722e0a919b9476eb41f9331aeb') in 0.001148 seconds
+  Time since last request: 364.561358 seconds.
+  path: Assets/vsauce.fbx
+  artifactKey: Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vsauce.fbx using Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b9f7a2b61ccacf8f60f7b01cd2cebb') in 0.239360 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 108
 ========================================================================
 Received Import Request.
-  Time since last request: 1.887710 seconds.
-  path: Assets/Scripts/Pickups/railGunPickup.cs
-  artifactKey: Guid(ace8860c143e8b81d85f1dc7c5fa9ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Pickups/railGunPickup.cs using Guid(ace8860c143e8b81d85f1dc7c5fa9ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6ceb94ae149cfa1fc53b2590455232') in 0.000322 seconds
+  Time since last request: 129.602416 seconds.
+  path: Assets/vsauce.fbx
+  artifactKey: Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vsauce.fbx using Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68dd8dde02274020c406ceec9e4f1cbb') in 0.018377 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 90
+========================================================================
+Received Import Request.
+  Time since last request: 10.377760 seconds.
+  path: Assets/vsauce.fbx
+  artifactKey: Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vsauce.fbx using Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90cc39aab3697a87d3b3b3fad3040bdf') in 0.018257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 90
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.316 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.311 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -1065,71 +619,64 @@ Native extension for WebGL target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.796 seconds
-Domain Reload Profiling: 1111ms
-	BeginReloadAssembly (105ms)
+Domain Reload Profiling: 1107ms
+	BeginReloadAssembly (116ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (156ms)
-		LoadAssemblies (161ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (135ms)
+		LoadAssemblies (166ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (38ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (21ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (797ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (796ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (531ms)
+		SetupLoadedEditorAssemblies (521ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
+			InitializePlatformSupportModulesInManaged (33ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (400ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (394ms)
 			ProcessInitializeOnLoadMethodAttributes (40ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (10ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 1.14 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.6 KB). Loaded Objects now: 4887.
-Memory consumption went from 234.2 MB to 234.1 MB.
-Total: 5.292593 ms (FindLiveObjects: 0.373310 ms CreateObjectMapping: 0.231621 ms MarkObjects: 4.581212 ms  DeleteObjects: 0.105890 ms)
+Unloading 35 unused Assets / (111.8 KB). Loaded Objects now: 4680.
+Memory consumption went from 234.1 MB to 234.0 MB.
+Total: 4.079792 ms (FindLiveObjects: 0.222630 ms CreateObjectMapping: 0.114040 ms MarkObjects: 3.688712 ms  DeleteObjects: 0.053960 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
   custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.321 seconds
+- Loaded All Assemblies, in  0.300 seconds
 Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
@@ -1137,680 +684,288 @@ Native extension for WebGL target not found
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.819 seconds
-Domain Reload Profiling: 1140ms
-	BeginReloadAssembly (105ms)
+- Finished resetting the current domain, in  0.787 seconds
+Domain Reload Profiling: 1087ms
+	BeginReloadAssembly (104ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (27ms)
+	RebuildCommonClasses (28ms)
 	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (161ms)
-		LoadAssemblies (167ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (21ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (819ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (549ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (413ms)
-			ProcessInitializeOnLoadMethodAttributes (42ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.7 KB). Loaded Objects now: 4903.
-Memory consumption went from 234.2 MB to 234.1 MB.
-Total: 3.877732 ms (FindLiveObjects: 0.267020 ms CreateObjectMapping: 0.093930 ms MarkObjects: 3.450382 ms  DeleteObjects: 0.065760 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 237.041476 seconds.
-  path: Assets/Prefabs/Pickups/pickup.controller
-  artifactKey: Guid(ab62ad550a8f633d2bf59f8ab9b45611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/pickup.controller using Guid(ab62ad550a8f633d2bf59f8ab9b45611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d46db6ed9ad60ef60513fddfaa98a4') in 0.011529 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 6.676637 seconds.
-  path: Assets/Prefabs/Pickups/pickupSPin.anim
-  artifactKey: Guid(34082cc44cf0e2a54b9b93c5cd73049a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/pickupSPin.anim using Guid(34082cc44cf0e2a54b9b93c5cd73049a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63f8edb380def34ac7d7d7dd384cb2ec') in 0.001297 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 4.918682 seconds.
-  path: Assets/Prefabs/Pickups/pickupSpin.anim
-  artifactKey: Guid(34082cc44cf0e2a54b9b93c5cd73049a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/pickupSpin.anim using Guid(34082cc44cf0e2a54b9b93c5cd73049a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b56de14f9d91ef7c29bcc86468f6071e') in 0.001016 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.301 seconds
-Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.825 seconds
-Domain Reload Profiling: 1126ms
-	BeginReloadAssembly (106ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (139ms)
-		LoadAssemblies (167ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (169ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (15ms)
 			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (826ms)
+	FinalizeReload (788ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (549ms)
+		SetupLoadedEditorAssemblies (519ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (40ms)
+			InitializePlatformSupportModulesInManaged (32ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (410ms)
-			ProcessInitializeOnLoadMethodAttributes (41ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.6 KB). Loaded Objects now: 4919.
-Memory consumption went from 234.2 MB to 234.1 MB.
-Total: 4.287742 ms (FindLiveObjects: 0.373810 ms CreateObjectMapping: 0.163860 ms MarkObjects: 3.678512 ms  DeleteObjects: 0.070920 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.315 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.819 seconds
-Domain Reload Profiling: 1134ms
-	BeginReloadAssembly (111ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (145ms)
-		LoadAssemblies (173ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (820ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (539ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (404ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (394ms)
 			ProcessInitializeOnLoadMethodAttributes (40ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.7 KB). Loaded Objects now: 4935.
-Memory consumption went from 234.2 MB to 234.1 MB.
-Total: 3.906362 ms (FindLiveObjects: 0.275230 ms CreateObjectMapping: 0.093640 ms MarkObjects: 3.467342 ms  DeleteObjects: 0.069630 ms)
+Unloading 35 unused Assets / (111.8 KB). Loaded Objects now: 4696.
+Memory consumption went from 234.0 MB to 233.9 MB.
+Total: 3.815972 ms (FindLiveObjects: 0.245700 ms CreateObjectMapping: 0.073350 ms MarkObjects: 3.432412 ms  DeleteObjects: 0.063740 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
   custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 304.998053 seconds.
-  path: Assets/Prefabs/Weapons/shotGun.prefab
-  artifactKey: Guid(3e55e866ea6a99362b8c38903a721777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/shotGun.prefab using Guid(3e55e866ea6a99362b8c38903a721777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4f99069aac7c000c3d474f136f1789') in 0.199594 seconds
+  Time since last request: 296.259811 seconds.
+  path: Assets/vsauce.fbx
+  artifactKey: Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/vsauce.fbx using Guid(6f4a5968cfe470d66ab37534cb21c5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a25635b01fbf09916c9f05335295e7') in 0.230902 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 54
-========================================================================
-Received Import Request.
-  Time since last request: 4.460406 seconds.
-  path: Assets/Prefabs/Weapons/railGun.prefab
-  artifactKey: Guid(423023f7bc101e29f87844c18e5dbb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/railGun.prefab using Guid(423023f7bc101e29f87844c18e5dbb9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7af14978fc7381d073a4be903d56b49d') in 0.006636 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 49
+Number of asset objects unloaded after import = 108
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.307 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.348 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 0 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.817 seconds
-Domain Reload Profiling: 1124ms
-	BeginReloadAssembly (113ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (138ms)
-		LoadAssemblies (166ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (15ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (817ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (540ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (412ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.7 KB). Loaded Objects now: 4987.
-Memory consumption went from 234.4 MB to 234.3 MB.
-Total: 4.550892 ms (FindLiveObjects: 0.284000 ms CreateObjectMapping: 0.157100 ms MarkObjects: 4.030332 ms  DeleteObjects: 0.078910 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 69.456111 seconds.
-  path: Assets/Prefabs/Pickups/railGunPickup.prefab
-  artifactKey: Guid(bbb88fead8bee7063a4829d29a2d83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/railGunPickup.prefab using Guid(bbb88fead8bee7063a4829d29a2d83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4436ae472212df5a35462f7fb5d2d8a4') in 0.226964 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 63
-========================================================================
-Received Import Request.
-  Time since last request: 5.230153 seconds.
-  path: Assets/Prefabs/Pickups/railGunPickup.prefab
-  artifactKey: Guid(bbb88fead8bee7063a4829d29a2d83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/railGunPickup.prefab using Guid(bbb88fead8bee7063a4829d29a2d83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055641ecd8bee01366412cb4ab5a9199') in 0.007633 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 67
-========================================================================
-Received Import Request.
-  Time since last request: 78.827135 seconds.
-  path: Assets/Prefabs/Pickups/railGunPickup.prefab
-  artifactKey: Guid(bbb88fead8bee7063a4829d29a2d83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/railGunPickup.prefab using Guid(bbb88fead8bee7063a4829d29a2d83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f01ba565c833ee875a7f20774e36113') in 0.006778 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 67
-========================================================================
-Received Import Request.
-  Time since last request: 0.389316 seconds.
-  path: Assets/Prefabs/Pickups/railGunPickup.prefab
-  artifactKey: Guid(bbb88fead8bee7063a4829d29a2d83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/railGunPickup.prefab using Guid(bbb88fead8bee7063a4829d29a2d83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '993b89c70817c211f18d428f447e66da') in 0.007157 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 67
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.315 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.823 seconds
-Domain Reload Profiling: 1137ms
-	BeginReloadAssembly (117ms)
+- Finished resetting the current domain, in  0.806 seconds
+Domain Reload Profiling: 1153ms
+	BeginReloadAssembly (115ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (28ms)
+	RebuildCommonClasses (27ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (140ms)
-		LoadAssemblies (168ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (178ms)
+		LoadAssemblies (201ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
+		AnalyzeDomain (19ms)
 			TypeCache.Refresh (4ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (823ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (806ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (540ms)
+		SetupLoadedEditorAssemblies (532ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (40ms)
+			InitializePlatformSupportModulesInManaged (32ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (405ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (407ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.7 KB). Loaded Objects now: 5039.
-Memory consumption went from 234.5 MB to 234.4 MB.
-Total: 4.063492 ms (FindLiveObjects: 0.346490 ms CreateObjectMapping: 0.093400 ms MarkObjects: 3.557412 ms  DeleteObjects: 0.065620 ms)
+Unloading 35 unused Assets / (111.6 KB). Loaded Objects now: 4748.
+Memory consumption went from 234.2 MB to 234.1 MB.
+Total: 4.077762 ms (FindLiveObjects: 0.271730 ms CreateObjectMapping: 0.072580 ms MarkObjects: 3.672522 ms  DeleteObjects: 0.060410 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
   custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 181.282709 seconds.
-  path: Assets/Prefabs/Pickups/rocketLauncherPickup.prefab
-  artifactKey: Guid(3137ae9736349b2f9901158407105001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/rocketLauncherPickup.prefab using Guid(3137ae9736349b2f9901158407105001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca8d419f1ccf93290aceaaaf6c3acd3') in 0.204897 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 85
-========================================================================
-Received Import Request.
-  Time since last request: 6.738067 seconds.
-  path: Assets/Prefabs/Pickups/rocketLauncherPickup.prefab
-  artifactKey: Guid(3137ae9736349b2f9901158407105001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/rocketLauncherPickup.prefab using Guid(3137ae9736349b2f9901158407105001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '072a1810644fe7f77b5bf03114a2a4bd') in 0.009685 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 103
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.306 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.301 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.815 seconds
-Domain Reload Profiling: 1121ms
-	BeginReloadAssembly (113ms)
+- Finished resetting the current domain, in  0.794 seconds
+Domain Reload Profiling: 1095ms
+	BeginReloadAssembly (105ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (168ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (795ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (526ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (402ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (111.8 KB). Loaded Objects now: 4764.
+Memory consumption went from 234.2 MB to 234.0 MB.
+Total: 4.525812 ms (FindLiveObjects: 0.265010 ms CreateObjectMapping: 0.178960 ms MarkObjects: 4.016932 ms  DeleteObjects: 0.064330 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 777.760421 seconds.
+  path: Assets/Audio/Vsauce/Thermite Balls.wav
+  artifactKey: Guid(20a0fb2ecd32c47f0a8ef979412ccc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Vsauce/Thermite Balls.wav using Guid(20a0fb2ecd32c47f0a8ef979412ccc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec47d0a37e5a44b36d665adf5fa4b8c') in 0.052208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Audio/Vsauce/Vsauce10.wav
+  artifactKey: Guid(5532938bd45adfe2a94994645a221528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Vsauce/Vsauce10.wav using Guid(5532938bd45adfe2a94994645a221528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd57cf550bbbf84c93817486fbd309622') in 0.003290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 42.591175 seconds.
+  path: Assets/Audio/Vsauce/Michael Vsauce9.wav
+  artifactKey: Guid(0dc6e530cd400869d823e7aa05dd2ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Vsauce/Michael Vsauce9.wav using Guid(0dc6e530cd400869d823e7aa05dd2ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ec8c12ba76422879f43eec5b936a80f') in 0.003503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.301 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.786 seconds
+Domain Reload Profiling: 1086ms
+	BeginReloadAssembly (108ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (34ms)
 	RebuildCommonClasses (27ms)
 	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (137ms)
-		LoadAssemblies (166ms)
+	LoadAllAssembliesAndSetupDomain (138ms)
+		LoadAssemblies (165ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
+		AnalyzeDomain (15ms)
 			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (815ms)
+	FinalizeReload (786ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (537ms)
+		SetupLoadedEditorAssemblies (516ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
+			InitializePlatformSupportModulesInManaged (30ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (407ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.7 KB). Loaded Objects now: 5091.
-Memory consumption went from 234.6 MB to 234.5 MB.
-Total: 4.028012 ms (FindLiveObjects: 0.334800 ms CreateObjectMapping: 0.109530 ms MarkObjects: 3.515512 ms  DeleteObjects: 0.067610 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.318 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.835 seconds
-Domain Reload Profiling: 1152ms
-	BeginReloadAssembly (117ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (141ms)
-		LoadAssemblies (171ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (836ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (559ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (39ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (423ms)
+			ProcessInitializeOnLoadAttributes (391ms)
 			ProcessInitializeOnLoadMethodAttributes (40ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.7 KB). Loaded Objects now: 5107.
-Memory consumption went from 234.5 MB to 234.4 MB.
-Total: 4.370632 ms (FindLiveObjects: 0.360010 ms CreateObjectMapping: 0.156470 ms MarkObjects: 3.778602 ms  DeleteObjects: 0.074980 ms)
+Unloading 35 unused Assets / (111.6 KB). Loaded Objects now: 4782.
+Memory consumption went from 234.2 MB to 234.1 MB.
+Total: 4.481692 ms (FindLiveObjects: 0.239370 ms CreateObjectMapping: 0.120290 ms MarkObjects: 4.047922 ms  DeleteObjects: 0.073440 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
   custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.313 seconds
-Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
-Native extension for LinuxStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.817 seconds
-Domain Reload Profiling: 1129ms
-	BeginReloadAssembly (113ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (141ms)
-		LoadAssemblies (171ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (817ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (538ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (405ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (111.7 KB). Loaded Objects now: 5123.
-Memory consumption went from 234.5 MB to 234.4 MB.
-Total: 4.439093 ms (FindLiveObjects: 0.355261 ms CreateObjectMapping: 0.169930 ms MarkObjects: 3.847572 ms  DeleteObjects: 0.065680 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:scripting/monoscript/fileName/pistolPickup.cs: cc486cf7c46de9f35fa47226299b6471 -> d5d618d508d5c65eeefaaaecc253c76d
-  custom:scripting/monoscript/fileName/shotGun.cs: 54c0b0dc26e0f6102bb12f65a3e8e9ff -> b8d4bd93e7a1b0c03ea844aac61d6b22
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: c1e8b765e6f7958ebe871a9d9395766f -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:scripting/monoscript/fileName/pistol.cs: e1f52885fcbe8a2cf4e8a1ec4f6f4d13 -> d757ad282acb201292d0f573d552acd1
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:scripting/monoscript/fileName/rocketLauncher.cs: 57b278b258bdac1061fde4a7a87c7999 -> 7ddf2099ee1c1c33dc509944e52e105c
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:scripting/monoscript/fileName/HealthPickup.cs: 62f2fb32ece6f7f0f919137b143d2559 -> 81d75439eca0785d4a25901e836293d6
-  custom:scripting/monoscript/fileName/railGun.cs: ba03dc6745300431ed1edcca3d1f38d3 -> 561fa754ca52dc21353cb6a4db303648
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/monoscript/fileName/pistolBullet.cs: 0bb57c7b5d3f0d8c142e5e101148dbcd -> 8d1dc2f28dc46102bcb7c77f6f5cd586
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 487.323506 seconds.
-  path: Assets/Prefabs/Pickups/shotGunPickup.prefab
-  artifactKey: Guid(020d42b499780d262a3c8a6681301e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/shotGunPickup.prefab using Guid(020d42b499780d262a3c8a6681301e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408d975d14d63907cab5fa33c44ae770') in 0.207007 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 63
-========================================================================
-Received Import Request.
-  Time since last request: 3.235071 seconds.
-  path: Assets/Prefabs/Pickups/shotGunPickup.prefab
-  artifactKey: Guid(020d42b499780d262a3c8a6681301e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Pickups/shotGunPickup.prefab using Guid(020d42b499780d262a3c8a6681301e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b58b685cdf856928fbb3fa95b8d52f') in 0.007016 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 67

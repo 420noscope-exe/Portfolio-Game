@@ -60,7 +60,7 @@ public class WeaponController : MonoBehaviour
     private void setCurrentGun()
     {
         int temp = checkButtons();
-        if(temp > -1 && guns[temp])
+        if(temp > -1 && guns[temp] != null)
         {
             deactivateGun();
             currentGun = guns[temp];
