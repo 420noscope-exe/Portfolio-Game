@@ -51,6 +51,10 @@ public class rocket : MonoBehaviour
             {
                 colliders[i].GetComponent<Rigidbody>().AddExplosionForce(explosionForce, gameObject.transform.position, radius);
             }
+            if (colliders[i].gameObject.GetComponent<HealthController>() != null)
+            {
+                colliders[i].gameObject.GetComponent<HealthController>().takeDamage(damage);
+            }
         }
 
         Destroy(spawnedEffect , 1f);

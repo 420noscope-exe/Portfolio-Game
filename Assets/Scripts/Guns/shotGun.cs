@@ -24,7 +24,11 @@ public class shotGun : MonoBehaviour
         if(Input.GetButtonDown("Fire1"))
         {
             aSource.Play();
-            Instantiate(bullet, muzzle.gameObject.transform.position, gameObject.transform.rotation);
+
+            for(int i=0; i<9; i++)
+            {
+                Instantiate(bullet, muzzle.gameObject.transform.position, gameObject.transform.rotation);
+            }
         }
     }
 }
