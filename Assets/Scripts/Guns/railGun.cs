@@ -7,24 +7,44 @@ public class railGun : MonoBehaviour, Gun
     private AudioSource aSource;
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject muzzle;
+
+    private Animator animator;
+
+    float fireRate =  1f/(600f/60f); //value in middle is measured in Rounds per minute
+    float nextFire;
+    int magazineSize = 15;
+    int ammoLoaded;
+    float reloadTime = 2;
+    float nextReload;
+
     // Start is called before the first frame update
     void Start()
     {
         aSource = gameObject.GetComponent<AudioSource>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        fire();
+        if (Input.GetButton("Fire1") && Time.time > nextFire && ammoLoaded > 0 && Time.time > nextReload)
+        {
+            nextFire = Time.time + fireRate;
+            fire();
+            ammoLoaded--;
+        }
+        if (ammoLoaded <= 0 || Input.GetButton("Reload"))
+        {
+            animator.Play("Reload");
+            nextReload = Time.time + reloadTime;
+            ammoLoaded = magazineSize;
+        }
     }
 
     public void fire()
     {
-        if(Input.GetButtonDown("Fire1"))
-        {
-            aSource.Play();
-            Instantiate(bullet, muzzle.gameObject.transform.position, gameObject.transform.rotation);
-        }
+        animator.Play("Fire");
+        aSource.Play();
+        Instantiate(bullet, muzzle.gameObject.transform.position, gameObject.transform.rotation);
     }
 }
