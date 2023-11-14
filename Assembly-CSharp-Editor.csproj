@@ -719,9 +719,6 @@
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
         <HintPath>/home/pasquale/Documents/Portfolio Game/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.AI.Navigation">
-        <HintPath>/home/pasquale/Documents/Portfolio Game/Library/ScriptAssemblies/Unity.AI.Navigation.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Editor">
         <HintPath>/home/pasquale/Documents/Portfolio Game/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
@@ -773,9 +770,6 @@
     <Reference Include="Unity.SysrootPackage.Editor">
         <HintPath>/home/pasquale/Documents/Portfolio Game/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.AI.Navigation.Updater">
-        <HintPath>/home/pasquale/Documents/Portfolio Game/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll</HintPath>
-    </Reference>
     <Reference Include="PPv2URPConverters">
         <HintPath>/home/pasquale/Documents/Portfolio Game/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
     </Reference>
@@ -793,12 +787,6 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
         <HintPath>/home/pasquale/Documents/Portfolio Game/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation.Editor">
-        <HintPath>/home/pasquale/Documents/Portfolio Game/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-        <HintPath>/home/pasquale/Documents/Portfolio Game/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>/home/pasquale/Documents/Portfolio Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>

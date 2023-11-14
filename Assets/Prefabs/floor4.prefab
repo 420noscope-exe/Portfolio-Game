@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: floor4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ea05d4baa7968f4198ac2a1f9cbb9f1, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 3ea05d4baa7968f4198ac2a1f9cbb9f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -67,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 3ea05d4baa7968f4198ac2a1f9cbb9f1, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 3ea05d4baa7968f4198ac2a1f9cbb9f1, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 293223143373077024}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: doorway-wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 3753629896153341578}
   - component: {fileID: 1415047682006715436}
   - component: {fileID: 1354192014474782571}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,9 +151,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: doorway
       objectReference: {fileID: 0}
+    - target: {fileID: 236967824416596595, guid: 9db63a03636194a5390911bd663c898e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 237368805003116681, guid: 9db63a03636194a5390911bd663c898e, type: 3}
       propertyPath: m_Name
       value: doorTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 237368805003116681, guid: 9db63a03636194a5390911bd663c898e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 493985495952375518, guid: 9db63a03636194a5390911bd663c898e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 577076854880221385, guid: 9db63a03636194a5390911bd663c898e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -194,6 +206,18 @@ PrefabInstance:
     - target: {fileID: 577076854880221385, guid: 9db63a03636194a5390911bd663c898e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7360725869978858924, guid: 9db63a03636194a5390911bd663c898e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887632659632408071, guid: 9db63a03636194a5390911bd663c898e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134473340729105066, guid: 9db63a03636194a5390911bd663c898e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
