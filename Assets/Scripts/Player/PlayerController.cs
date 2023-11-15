@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     	cam = GetComponentInChildren<Camera>();
         moveSpeed = 5;
         airborneMoveSpeed = 4;
-        sprintSpeed = 7;
+        sprintSpeed = 15;
         jumpForce = 150;
         sensitivity = 200;
         cursorLock = true;

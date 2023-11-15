@@ -32,8 +32,9 @@ public class VsauceBossAI : MonoBehaviour
     public float walkPointRange;
 
     //Attacking
-    public float timeBetweenAttacks;
-    bool alreadyAttacked;
+    public float timeBetweenAttacks, timBetweenVoiceLines, timeBetweenPatrol;
+    bool alreadyAttacked, alreadyVoiceLined, alreadyPatrolled;
+    public float dashSpeed = 10;
 
     //States
     public float sightRange, attackRange;
@@ -80,8 +81,8 @@ public class VsauceBossAI : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) patrolling();
-        if (playerInSightRange && !playerInAttackRange) chasePlayer();
+        if (!playerInSightRange && !playerInAttackRange && !alreadyPatrolled) patrolling();
+        if (playerInSightRange && !playerInAttackRange && !alreadyAttacked) chasePlayer();
         if (playerInSightRange && playerInAttackRange) attackPlayer();
     }
 
@@ -92,14 +93,29 @@ public class VsauceBossAI : MonoBehaviour
 
         if(walkPointSet)
             agent.SetDestination(walkPoint);
-            gameObject.transform.LookAt(walkPoint);
+            //gameObject.transform.LookAt(walkPoint);
             walk();
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         if(distanceToWalkPoint.magnitude <1f)
+        {
             walkPointSet = false;
-            stopWalking();
+            if(!alreadyPatrolled)
+            {
+                idle();
+                alreadyPatrolled = true;
+                Invoke(nameof(resetPatrol), timeBetweenPatrol);
+            }
+        }    
+
+        if(!alreadyVoiceLined)
+            {
+                playVoiceLine();
+                alreadyVoiceLined = true;
+                Invoke(nameof(resetVoiceline), timBetweenVoiceLines);
+            }
+
     }
 
     private void searchWalkPoint()
@@ -112,7 +128,6 @@ public class VsauceBossAI : MonoBehaviour
 
         if (Physics.Raycast(walkPoint, -transform.up, 5f, whatIsGround))
         {
-            playVoiceLine();
             walkPointSet = true;
         }
     }
@@ -123,11 +138,77 @@ public class VsauceBossAI : MonoBehaviour
         Vector3 temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
         gameObject.transform.LookAt(temp);
         walk();
+        if(!alreadyVoiceLined)
+            {
+                playVoiceLine();
+                alreadyVoiceLined = true;
+                Invoke(nameof(resetVoiceline), timBetweenVoiceLines);
+            }
     }
 
     private void attackPlayer()
     {
-        punchR();
+        agent.SetDestination(transform.position);
+
+        if(!alreadyAttacked)
+        {
+            int randomAttack = Random.Range(1,4);
+            switch(randomAttack)
+            {
+                case 1:
+                    combo();
+                    break;
+                case 2:
+                    thermiteBallsShort();
+                    break;
+                case 3:
+                    slag();
+                    break;
+            }
+            alreadyAttacked = true;
+            Invoke(nameof(resetAttack), timeBetweenAttacks);
+            Invoke(nameof(resumeAgent), timeBetweenAttacks);
+        }    
+    }
+
+//types of attacks
+    private void combo()
+    {
+        agent.Stop();
+            punchR();
+            Invoke(nameof(punchL), 1.0f);
+            Invoke(nameof(punchR), 2.0f);
+    }
+
+    private void thermiteBallsShort()
+    {
+        animator.Play("Base.ThermiteBalls");
+        aSource.PlayOneShot(thermiteBallsShortAC);
+        StartCoroutine(thermiteExplosion());
+    }
+
+    private void slag()
+    {
+        animator.Play("Base.Slag");
+        aSource.PlayOneShot(slagAC);
+    }
+
+
+//end of types of attacks
+
+    private void resetAttack()
+    {
+        alreadyAttacked = false;
+    }
+
+    private void resetVoiceline()
+    {
+        alreadyVoiceLined = false;
+    }
+
+    private void resetPatrol()
+    {
+        alreadyPatrolled = false;
     }
 
     private void idle()
@@ -146,6 +227,7 @@ public class VsauceBossAI : MonoBehaviour
         animator.Play("Base.PunchL");
         aSource.clip = punchAC;
         aSource.Play();
+        StartCoroutine("dash");
     }
 
     private void punchR()
@@ -153,19 +235,7 @@ public class VsauceBossAI : MonoBehaviour
         animator.Play("Base.PunchR");
         aSource.clip = punchAC;
         aSource.Play();
-    }
-
-    private void thermiteBallsShort()
-    {
-        animator.Play("Base.ThermiteBalls");
-        aSource.PlayOneShot(thermiteBallsShortAC);
-        StartCoroutine(thermiteExplosion());
-    }
-
-    private void slag()
-    {
-        animator.Play("Base.Slag");
-        aSource.PlayOneShot(slagAC);
+        StartCoroutine("dash");
     }
 
     IEnumerator thermiteExplosion()
@@ -182,20 +252,26 @@ public class VsauceBossAI : MonoBehaviour
         Destroy(temp, 1.0f);
     }
 
-    IEnumerator stopWalking()
+    private void playVoiceLine()
     {
-        float delayInMs = 2000f;
-        float ms = Time.deltaTime;
-        idle();
-        while(ms <= delayInMs )
+        aSource.PlayOneShot(clips[Random.Range(0,clips.Count)]);
+    }
+
+    IEnumerator dash()
+    {
+        Vector3 temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
+        transform.LookAt(temp);
+        float delay = 1f;
+        float start = Time.time;
+        while(Time.time <= start + delay)
             {
-                ms += Time.deltaTime;
+                gameObject.transform.position += gameObject.transform.forward * dashSpeed * Time.deltaTime;
                 yield return null;
             }
     }
 
-    private void playVoiceLine()
+    public void resumeAgent()
     {
-        aSource.PlayOneShot(clips[Random.Range(0,clips.Count)]);
+        agent.Resume();
     }
 }

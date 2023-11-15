@@ -27,11 +27,12 @@ public class shotGunBullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        print("Debug Bullet Collided with " + col.gameObject.name + " at " + gameObject.transform.position);
+        //print("Debug Bullet Collided with " + col.gameObject.name + " at " + gameObject.transform.position);
         if(col.gameObject.GetComponent<HealthController>() != null)
         {
             healthController = col.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
         }
         if(!canRicochet)
         {
