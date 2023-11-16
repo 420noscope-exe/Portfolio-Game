@@ -42,6 +42,7 @@
   <ItemGroup>
      <Compile Include="Assets/Scripts/Interfaces/Gun.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
+     <Compile Include="Assets/Dummy.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
      <Compile Include="Assets/StarterAssets/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
@@ -99,6 +100,7 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
      <Compile Include="Assets/Scripts/Pickups/rocketLauncherPickup.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
+     <Compile Include="Assets/SlagProjectile.cs" />
      <Compile Include="Assets/StarterAssets/FirstPersonController/Scripts/BasicRigidBodyPush.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
      <Compile Include="Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs" />

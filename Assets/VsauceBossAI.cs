@@ -15,6 +15,7 @@ public class VsauceBossAI : MonoBehaviour
     [SerializeField]private AudioClip teleportAC;
     [SerializeField]private GameObject explosionEffect;
     [SerializeField]private GameObject rightHand;
+    [SerializeField]private GameObject slagProj;
     private AudioSource aSource;
     
     private Animator animator;
@@ -191,6 +192,8 @@ public class VsauceBossAI : MonoBehaviour
     {
         animator.Play("Base.Slag");
         aSource.PlayOneShot(slagAC);
+
+        StartCoroutine("spraySlag");
     }
 
 
@@ -250,6 +253,27 @@ public class VsauceBossAI : MonoBehaviour
             }
         GameObject temp = Instantiate(explosionEffect, rightHand.transform);
         Destroy(temp, 1.0f);
+    }
+
+    IEnumerator spraySlag()
+    {
+        Vector3 temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
+        transform.LookAt(temp);
+        float delay = 1.5f;
+        float start = Time.time;
+        float fireRate =  1f/(6000f/60f); //value in middle is measured in Rounds per minute
+        float nextFire = 0;
+        while(Time.time <= start + delay)
+            {
+                if (Time.time > nextFire)
+                {
+                    nextFire = Time.time + fireRate;
+                    Instantiate(slagProj, rightHand.transform.position, gameObject.transform.rotation);
+                    temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
+                    transform.LookAt(temp);
+                }
+                yield return null;
+            }
     }
 
     private void playVoiceLine()

@@ -35,6 +35,7 @@ public class rocket : MonoBehaviour
         {
             healthController = col.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
         }
         explode();
     }
@@ -54,6 +55,7 @@ public class rocket : MonoBehaviour
             if (colliders[i].gameObject.GetComponent<HealthController>() != null)
             {
                 colliders[i].gameObject.GetComponent<HealthController>().takeDamage(damage);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
             }
         }
 
