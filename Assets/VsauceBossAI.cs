@@ -13,6 +13,7 @@ public class VsauceBossAI : MonoBehaviour
     [SerializeField]private AudioClip thermiteBallsShortAC;
     [SerializeField]private AudioClip punchAC;
     [SerializeField]private AudioClip teleportAC;
+    [SerializeField]private AudioClip explosionAC;
     [SerializeField]private GameObject explosionEffect;
     [SerializeField]private GameObject rightHand;
     [SerializeField]private GameObject slagProj;
@@ -175,6 +176,7 @@ public class VsauceBossAI : MonoBehaviour
 //types of attacks
     private void combo()
     {
+        timeBetweenAttacks = 4f;
         agent.Stop();
             punchR();
             Invoke(nameof(punchL), 1.0f);
@@ -183,6 +185,7 @@ public class VsauceBossAI : MonoBehaviour
 
     private void thermiteBallsShort()
     {
+        timeBetweenAttacks = 2f;
         animator.Play("Base.ThermiteBalls");
         aSource.PlayOneShot(thermiteBallsShortAC);
         StartCoroutine(thermiteExplosion());
@@ -190,6 +193,7 @@ public class VsauceBossAI : MonoBehaviour
 
     private void slag()
     {
+        timeBetweenAttacks = 4f;
         animator.Play("Base.Slag");
         aSource.PlayOneShot(slagAC);
 
@@ -251,8 +255,10 @@ public class VsauceBossAI : MonoBehaviour
                 ms += Time.deltaTime;
                 yield return null;
             }
-        GameObject temp = Instantiate(explosionEffect, rightHand.transform);
-        Destroy(temp, 1.0f);
+        GameObject temp = Instantiate(explosionEffect, rightHand.transform.position, rightHand.transform.rotation);
+        aSource.PlayOneShot(explosionAC);
+        Invoke(nameof(explode), 0.15f);
+        Destroy(temp, 5.0f);
     }
 
     IEnumerator spraySlag()
@@ -298,4 +304,23 @@ public class VsauceBossAI : MonoBehaviour
     {
         agent.Resume();
     }
+
+    void explode()
+    {
+        
+        Collider[] colliders = Physics.OverlapSphere(rightHand.transform.position, 12.5f);
+
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i].GetComponent<Rigidbody>() && colliders[i].gameObject != gameObject)
+            {
+                colliders[i].GetComponent<Rigidbody>().AddExplosionForce(100000f, rightHand.transform.position, 12.5f);
+            }
+            if (colliders[i].gameObject.GetComponent<HealthController>() != null && colliders[i].gameObject != gameObject)
+            {
+                colliders[i].gameObject.GetComponent<HealthController>().takeDamage(30);
+            }
+        }
+    }
+    
 }
