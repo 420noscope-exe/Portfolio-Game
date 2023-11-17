@@ -173,6 +173,14 @@ public class VsauceBossAI : MonoBehaviour
         }    
     }
 
+    public void OnCollisionEnter(Collision col)
+    {
+        if(alreadyAttacked && col.gameObject.GetComponent<HealthController>() != null)
+        {
+            col.gameObject.GetComponent<HealthController>().takeDamage(20);
+        }
+    }
+
 //types of attacks
     private void combo()
     {
