@@ -59,6 +59,7 @@
      <Compile Include="Assets/StarterAssets/TutorialInfo/Scripts/Readme.cs" />
      <Compile Include="Assets/VsauceBossAI.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
+     <Compile Include="Assets/Scripts/Guns/smg.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />

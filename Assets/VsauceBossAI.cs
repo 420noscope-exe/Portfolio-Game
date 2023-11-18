@@ -265,7 +265,7 @@ public class VsauceBossAI : MonoBehaviour
             }
         GameObject temp = Instantiate(explosionEffect, rightHand.transform.position, rightHand.transform.rotation);
         aSource.PlayOneShot(explosionAC);
-        Invoke(nameof(explode), 0.15f);
+        Invoke(nameof(explode), 0.3f);
         Destroy(temp, 5.0f);
     }
 
@@ -316,13 +316,13 @@ public class VsauceBossAI : MonoBehaviour
     void explode()
     {
         
-        Collider[] colliders = Physics.OverlapSphere(rightHand.transform.position, 12.5f);
+        Collider[] colliders = Physics.OverlapSphere(rightHand.transform.position, 10f);
 
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].GetComponent<Rigidbody>() && colliders[i].gameObject != gameObject)
             {
-                colliders[i].GetComponent<Rigidbody>().AddExplosionForce(100000f, rightHand.transform.position, 12.5f);
+                colliders[i].GetComponent<Rigidbody>().AddExplosionForce(100000f, rightHand.transform.position, 10f);
             }
             if (colliders[i].gameObject.GetComponent<HealthController>() != null && colliders[i].gameObject != gameObject)
             {
