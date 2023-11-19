@@ -299,7 +299,7 @@ public class VsauceBossAI : MonoBehaviour
     {
         Vector3 temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
         transform.LookAt(temp);
-        float delay = 1f;
+        float delay = 0.5f;
         float start = Time.time;
         while(Time.time <= start + delay)
             {
