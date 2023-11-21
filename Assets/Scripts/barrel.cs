@@ -7,7 +7,7 @@ public class barrel : MonoBehaviour, HealthController
     [SerializeField] private AudioClip clip;
 
     public int health;
-    public int maxHealth = 10;
+    public int maxHealth = 2;
 
     public GameObject explosionEffect;
     public float radius = 5f;

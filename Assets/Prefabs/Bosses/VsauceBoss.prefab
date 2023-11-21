@@ -44,8 +44,8 @@ GameObject:
   - component: {fileID: 7079837178269163223}
   - component: {fileID: 3945701800693635987}
   - component: {fileID: 883355409480288425}
-  - component: {fileID: 2959347357157984783}
   - component: {fileID: 7512110953624438781}
+  - component: {fileID: 7741134253640747394}
   m_Layer: 0
   m_Name: VsauceBoss
   m_TagString: Untagged
@@ -136,7 +136,7 @@ MonoBehaviour:
   timeBetweenAttacks: 4
   timBetweenVoiceLines: 6
   timeBetweenPatrol: 2
-  dashSpeed: 10
+  dashSpeed: 25
   sightRange: 21
   attackRange: 10
   playerInSightRange: 0
@@ -247,7 +247,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -259,22 +259,6 @@ NavMeshAgent:
   m_BaseOffset: 4
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &2959347357157984783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2970826198178749996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e82e9b020b5cb7308b2466c613e37aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 100
-  playerController: {fileID: 0}
-  DeathMenu: {fileID: 0}
 --- !u!54 &7512110953624438781
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -302,6 +286,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &7741134253640747394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970826198178749996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f6f1d0d9c24ac36ae2af3d740053a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 320
+  vsauceAI: {fileID: 0}
+  agent: {fileID: 0}
+  aSource: {fileID: 0}
+  death: {fileID: 0}
+  hitHurt: {fileID: 0}
 --- !u!1001 &5827636800704186751
 PrefabInstance:
   m_ObjectHideFlags: 0

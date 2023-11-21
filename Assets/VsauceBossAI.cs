@@ -36,7 +36,7 @@ public class VsauceBossAI : MonoBehaviour
     //Attacking
     public float timeBetweenAttacks, timBetweenVoiceLines, timeBetweenPatrol;
     bool alreadyAttacked, alreadyVoiceLined, alreadyPatrolled;
-    public float dashSpeed = 10;
+    public float dashSpeed = 25;
 
     //States
     public float sightRange, attackRange;
@@ -195,7 +195,8 @@ public class VsauceBossAI : MonoBehaviour
     {
         timeBetweenAttacks = 2f;
         animator.Play("Base.ThermiteBalls");
-        aSource.PlayOneShot(thermiteBallsShortAC);
+        aSource.clip = thermiteBallsShortAC;
+        aSource.Play();
         StartCoroutine(thermiteExplosion());
     }
 
@@ -203,7 +204,8 @@ public class VsauceBossAI : MonoBehaviour
     {
         timeBetweenAttacks = 4f;
         animator.Play("Base.Slag");
-        aSource.PlayOneShot(slagAC);
+        aSource.clip = slagAC;
+        aSource.Play();
 
         StartCoroutine("spraySlag");
     }
@@ -292,7 +294,8 @@ public class VsauceBossAI : MonoBehaviour
 
     private void playVoiceLine()
     {
-        aSource.PlayOneShot(clips[Random.Range(0,clips.Count)]);
+        aSource.clip = clips[Random.Range(0,clips.Count)];
+        aSource.Play();
     }
 
     IEnumerator dash()

@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115a782014fa3edb287f3f00b232a6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 1
   speed: 50
   canRicochet: 0
   spread: 0.2

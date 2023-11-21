@@ -3670,6 +3670,8 @@ MonoBehaviour:
   maxHealth: 100
   playerController: {fileID: 710021475}
   DeathMenu: {fileID: 1664265214}
+  aSource: {fileID: 0}
+  hitHurt: {fileID: 8300000, guid: 74279f828dabcb6af931cd726dfd67c9, type: 3}
 --- !u!114 &710021477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9125,9 +9127,33 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: restartButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4516783625831895323, guid: 3ee91c73fe64cd360887b6a6273e8aa5, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516783625831895323, guid: 3ee91c73fe64cd360887b6a6273e8aa5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.2277228
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516783625831895323, guid: 3ee91c73fe64cd360887b6a6273e8aa5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7978960620134023181, guid: 3ee91c73fe64cd360887b6a6273e8aa5, type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244400647088782768, guid: 3ee91c73fe64cd360887b6a6273e8aa5, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244400647088782768, guid: 3ee91c73fe64cd360887b6a6273e8aa5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.2277228
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244400647088782768, guid: 3ee91c73fe64cd360887b6a6273e8aa5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8690078603046301052, guid: 3ee91c73fe64cd360887b6a6273e8aa5, type: 3}
       propertyPath: m_Pivot.x
@@ -9888,6 +9914,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 710021475}
+    - target: {fileID: 7372961383348830188, guid: a8a70045f2cf70f87926dc3fe2e8e293, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372961383348830188, guid: a8a70045f2cf70f87926dc3fe2e8e293, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372961383348830188, guid: a8a70045f2cf70f87926dc3fe2e8e293, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10361,6 +10399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VsauceBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 2970826198178749996, guid: 0d90b1babb3a51cbd94b12b256ec74ec, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3621532009040194242, guid: 0d90b1babb3a51cbd94b12b256ec74ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.8
@@ -10401,6 +10443,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7741134253640747394, guid: 0d90b1babb3a51cbd94b12b256ec74ec, type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d9a3d7c9d6dce198b0f3aedaa36a17b, type: 3}
+    - target: {fileID: 7741134253640747394, guid: 0d90b1babb3a51cbd94b12b256ec74ec, type: 3}
+      propertyPath: hitHurt
+      value: 
+      objectReference: {fileID: 8300000, guid: 88ab2820d33b54fe4bc683794e17a9b3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

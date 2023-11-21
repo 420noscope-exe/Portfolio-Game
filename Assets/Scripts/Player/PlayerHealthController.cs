@@ -9,11 +9,14 @@ public class PlayerHealthController : MonoBehaviour, HealthController
     public int maxHealth = 100;
     public PlayerController playerController;
     public GameObject DeathMenu;
+    public AudioSource aSource;
+    public AudioClip hitHurt;
 
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
+        aSource = gameObject.GetComponent<AudioSource>();
     }
 
     // FixedUpdate is called once every .02 seconds
@@ -36,7 +39,11 @@ public class PlayerHealthController : MonoBehaviour, HealthController
 
     public void takeDamage(int damage) //for taking damage
     {
+        if(!isDead())
+        {
         health = health - damage;
+        aSource.PlayOneShot(hitHurt);
+        }
     }
 
     public void takeHeal(int heal) //for healing or increasing health

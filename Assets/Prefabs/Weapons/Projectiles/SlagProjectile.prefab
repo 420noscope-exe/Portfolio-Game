@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlagProjectile
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 987dcff48a3d68b8faceaceee83ec551, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 987dcff48a3d68b8faceaceee83ec551, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -143,3 +151,4 @@ MonoBehaviour:
   damage: 10
   speed: 5
   canRicochet: 0
+  spread: 0.2
