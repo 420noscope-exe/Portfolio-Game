@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AndroidAi : MonoBehaviour
+public class RoverAI : MonoBehaviour
 {
     [SerializeField]private List<AudioClip> clips = new List<AudioClip>();
     [SerializeField]private List<AudioClip> hit = new List<AudioClip>();
@@ -26,7 +26,6 @@ public class AndroidAi : MonoBehaviour
     //Attacking
     public float timeBetweenAttacks, timBetweenVoiceLines, timeBetweenPatrol;
     bool alreadyAttacked, alreadyVoiceLined, alreadyPatrolled, alreadyHitPlayer;
-    [SerializeField]private GameObject projectile, muzzle;
 
     //States
     public float sightRange, attackRange;
@@ -124,7 +123,10 @@ public class AndroidAi : MonoBehaviour
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
-        if (Physics.Raycast(walkPoint, -transform.up, 5f, whatIsGround))
+        UnityEngine.AI.NavMeshPath navMeshPath = new UnityEngine.AI.NavMeshPath();
+        agent.CalculatePath(walkPoint, navMeshPath);
+
+        if (Physics.Raycast(walkPoint, -transform.up, 5f, whatIsGround) && navMeshPath.status == UnityEngine.AI.NavMeshPathStatus.PathComplete)
         {
             walkPointSet = true;
         }
@@ -173,7 +175,7 @@ public class AndroidAi : MonoBehaviour
 
     private void idle()
     {
-        animator.Play("Base.Idle");
+        animator.Play("Idle");
     }
 
     private void walk()
@@ -188,4 +190,8 @@ public class AndroidAi : MonoBehaviour
         aSource.clip = clips[Random.Range(0,clips.Count)];
         aSource.Play();
     }
+
+
+
+
 }

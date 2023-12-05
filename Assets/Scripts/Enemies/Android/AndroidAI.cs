@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoverAI : MonoBehaviour
+public class AndroidAI : MonoBehaviour
 {
     [SerializeField]private List<AudioClip> clips = new List<AudioClip>();
     [SerializeField]private List<AudioClip> hit = new List<AudioClip>();
@@ -26,6 +26,7 @@ public class RoverAI : MonoBehaviour
     //Attacking
     public float timeBetweenAttacks, timBetweenVoiceLines, timeBetweenPatrol;
     bool alreadyAttacked, alreadyVoiceLined, alreadyPatrolled, alreadyHitPlayer;
+    [SerializeField]private GameObject projectile, muzzle;
 
     //States
     public float sightRange, attackRange;
@@ -65,7 +66,7 @@ public class RoverAI : MonoBehaviour
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
-        if(distanceToWalkPoint.magnitude <1f)
+        if(distanceToWalkPoint.magnitude <.5f)
         {
             walkPointSet = false;
             if(!alreadyPatrolled)
@@ -78,7 +79,7 @@ public class RoverAI : MonoBehaviour
 
         if(!alreadyVoiceLined)
             {
-                //playVoiceLine();
+                playVoiceLine();
                 alreadyVoiceLined = true;
                 Invoke(nameof(resetVoiceline), timBetweenVoiceLines);
             }
@@ -102,7 +103,7 @@ public class RoverAI : MonoBehaviour
     private void attackPlayer()
     {
         agent.SetDestination(transform.position);
-
+        /*
         if(!alreadyAttacked)
         {
             resetHitPlayer();
@@ -111,7 +112,8 @@ public class RoverAI : MonoBehaviour
             alreadyAttacked = true;
             Invoke(nameof(resetAttack), timeBetweenAttacks);
             Invoke(nameof(resumeAgent), timeBetweenAttacks);
-        }    
+        }
+        */
     }
 
     //Search walkpoint for navmesh, helper function for patrolling
@@ -123,7 +125,10 @@ public class RoverAI : MonoBehaviour
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
-        if (Physics.Raycast(walkPoint, -transform.up, 5f, whatIsGround))
+        UnityEngine.AI.NavMeshPath navMeshPath = new UnityEngine.AI.NavMeshPath();
+        agent.CalculatePath(walkPoint, navMeshPath);
+
+        if (Physics.Raycast(walkPoint, -transform.up, 5f, whatIsGround) && navMeshPath.status == UnityEngine.AI.NavMeshPathStatus.PathComplete)
         {
             walkPointSet = true;
         }
@@ -172,7 +177,7 @@ public class RoverAI : MonoBehaviour
 
     private void idle()
     {
-        animator.Play("Base.Idle");
+        animator.Play("Idle");
     }
 
     private void walk()
@@ -187,8 +192,4 @@ public class RoverAI : MonoBehaviour
         aSource.clip = clips[Random.Range(0,clips.Count)];
         aSource.Play();
     }
-
-
-
-
 }
