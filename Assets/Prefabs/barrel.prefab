@@ -69,7 +69,31 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f672745e2f846e95ba39067deaaba8e9, type: 3}
       insertIndex: -1
       addedObject: {fileID: -33786702692757714}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: f672745e2f846e95ba39067deaaba8e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5034677963652555786}
   m_SourcePrefab: {fileID: 100100000, guid: f672745e2f846e95ba39067deaaba8e9, type: 3}
+--- !u!1 &2211712704119277462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: f672745e2f846e95ba39067deaaba8e9, type: 3}
+  m_PrefabInstance: {fileID: 8069666365034840606}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &5034677963652555786
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2211712704119277462}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.70000005, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.021000002, y: -0.027, z: -0.021000002}
+  m_TimeToStationary: 0.5
 --- !u!1 &7150694883091349327 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f672745e2f846e95ba39067deaaba8e9, type: 3}
@@ -140,5 +164,6 @@ MonoBehaviour:
   health: 0
   maxHealth: 2
   explosionEffect: {fileID: 6158501333482204560, guid: 17b587091b19979f589ec65c083a4ce0, type: 3}
+  damage: 10
   radius: 5
   explosionForce: 10000

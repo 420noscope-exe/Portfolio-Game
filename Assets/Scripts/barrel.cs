@@ -10,6 +10,7 @@ public class barrel : MonoBehaviour, HealthController
     public int maxHealth = 2;
 
     public GameObject explosionEffect;
+    [SerializeField] private int damage = 10;
     public float radius = 5f;
     public float explosionForce = 10000f;
 
@@ -67,6 +68,11 @@ public class barrel : MonoBehaviour, HealthController
             if (colliders[i].GetComponent<Rigidbody>())
             {
                 colliders[i].GetComponent<Rigidbody>().AddExplosionForce(explosionForce, gameObject.transform.position, radius);
+            }
+            if (colliders[i].gameObject.GetComponent<HealthController>() != null)
+            {
+                colliders[i].gameObject.GetComponent<HealthController>().takeDamage(damage);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
             }
         }
 

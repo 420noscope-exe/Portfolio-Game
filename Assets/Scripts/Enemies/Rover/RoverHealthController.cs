@@ -57,8 +57,10 @@ public class RoverHealthController : MonoBehaviour, HealthController
         {
             roverAI.enabled = false;
             agent.Stop();
+            agent.enabled = false;
             gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            gameObject.GetComponent<Rigidbody>().useGravity = true;
             if(!deathClipPlayed)
             {
                 aSource.clip = death;

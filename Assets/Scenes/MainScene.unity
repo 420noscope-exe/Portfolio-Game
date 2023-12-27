@@ -196,6 +196,22 @@ PrefabInstance:
       propertyPath: roomIsClear
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3975376154031984163, guid: 97e26a744ba0589e9972c76def481c7d, type: 3}
+      propertyPath: roomArray.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3975376154031984163, guid: 97e26a744ba0589e9972c76def481c7d, type: 3}
+      propertyPath: roomArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 2419542804506378416, guid: 2bf75c63e995cfbc39ba2088561c6f83, type: 3}
+    - target: {fileID: 3975376154031984163, guid: 97e26a744ba0589e9972c76def481c7d, type: 3}
+      propertyPath: roomArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 6923493857735785074, guid: 6df6729c8a8baf9cbae54e42994289fc, type: 3}
+    - target: {fileID: 3975376154031984163, guid: 97e26a744ba0589e9972c76def481c7d, type: 3}
+      propertyPath: roomArray.Array.data[3]
+      value: 
+      objectReference: {fileID: 43921002277263918, guid: a60dd9fc59b8b63e6a0130ba36200b61, type: 3}
     - target: {fileID: 8309410964562661491, guid: 97e26a744ba0589e9972c76def481c7d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

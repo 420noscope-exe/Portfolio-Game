@@ -14,6 +14,7 @@ public class proceduralGenerationSystem : MonoBehaviour
     [SerializeField] private bool roomIsClear;
     private GameObject currentRoom;
     private GameObject lastRoom;
+    private int lastRoomNum;
 
     // Start is called before the first frame update
     void Start()
@@ -107,6 +108,15 @@ public class proceduralGenerationSystem : MonoBehaviour
     {
         //randomly picks room prefab GameObject from array
         int roomNum = Random.Range(0, roomArray.Length);
+        if(roomNum == lastRoomNum)
+        {
+            return getRandomRoom();
+        }
+        else
+        {
+            lastRoomNum = roomNum;
+        }
+        
         return roomArray[roomNum];
     }
 }

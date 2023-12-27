@@ -85,8 +85,8 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
      <Compile Include="Assets/Scripts/Pickups/railGunPickup.cs" />
      <Compile Include="Assets/Scripts/DoorController.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets/Scripts/Enemies/VsauceBoss/VsauceBossHealthController.cs" />
+     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
@@ -109,8 +109,8 @@
      <Compile Include="Assets/Scripts/Guns/Projectiles/smgBullet.cs" />
      <Compile Include="Assets/Scripts/Enemies/Android/AndroidHealthController.cs" />
      <Compile Include="Assets/StarterAssets/FirstPersonController/Scripts/BasicRigidBodyPush.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
      <Compile Include="Assets/Scripts/Enemies/Rover/RoverHealthController.cs" />
+     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
      <Compile Include="Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs" />
      <Compile Include="Assets/Scripts/Player/WeaponController.cs" />
      <Compile Include="Assets/Scripts/Guns/Projectiles/SlagProjectile.cs" />

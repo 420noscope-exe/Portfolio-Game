@@ -87,16 +87,26 @@ public class RoverAI : MonoBehaviour
 
     private void chasePlayer()
     {
-        agent.SetDestination(player.transform.position);
-        Vector3 temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
-        gameObject.transform.LookAt(temp);
-        walk();
-        if(!alreadyVoiceLined)
-            {
-                //playVoiceLine();
-                alreadyVoiceLined = true;
-                Invoke(nameof(resetVoiceline), timBetweenVoiceLines);
-            }
+        UnityEngine.AI.NavMeshPath navMeshPath = new UnityEngine.AI.NavMeshPath();
+        agent.CalculatePath(player.transform.position, navMeshPath);
+
+        if(navMeshPath.status == UnityEngine.AI.NavMeshPathStatus.PathComplete)
+        {
+            agent.SetDestination(player.transform.position);
+            Vector3 temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
+            gameObject.transform.LookAt(temp);
+            walk();
+            if(!alreadyVoiceLined)
+              {
+                   //playVoiceLine();
+                   alreadyVoiceLined = true;
+                   Invoke(nameof(resetVoiceline), timBetweenVoiceLines);
+               }
+        }
+        else if(!alreadyPatrolled)
+        {
+            patrolling();
+        }
     }
 
     private void attackPlayer()
