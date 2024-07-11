@@ -67,6 +67,7 @@ public class AndroidHealthController : MonoBehaviour, HealthController
                 aSource.Play();
                 deathClipPlayed = true;
             }
+            Destroy(gameObject, 1f);
             this.enabled = false;
         }
         

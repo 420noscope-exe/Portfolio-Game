@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealthController : MonoBehaviour, HealthController
 {
@@ -8,6 +9,7 @@ public class PlayerHealthController : MonoBehaviour, HealthController
     public int health;
     public int maxHealth = 100;
     public PlayerController playerController;
+    public Image HealthMeter;
     public GameObject DeathMenu;
     public AudioSource aSource;
     public AudioClip hitHurt;
@@ -17,6 +19,17 @@ public class PlayerHealthController : MonoBehaviour, HealthController
     {
         health = maxHealth;
         aSource = gameObject.GetComponent<AudioSource>();
+    }
+
+    void Update()
+    {
+        setHealthMeter();
+    }
+
+    private void setHealthMeter()
+    {
+        float healthPercentage = (float)health/maxHealth;
+        HealthMeter.fillAmount = healthPercentage;
     }
 
     // FixedUpdate is called once every .02 seconds

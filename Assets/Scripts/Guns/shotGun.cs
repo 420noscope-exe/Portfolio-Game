@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shotGun : MonoBehaviour
+public class shotGun : MonoBehaviour, Gun
 {
     private AudioSource aSource;
     [SerializeField] private GameObject bullet;
@@ -51,5 +51,10 @@ public class shotGun : MonoBehaviour
             Instantiate(bullet, muzzle.gameObject.transform.position, gameObject.transform.rotation);
         }
         GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * -100f, ForceMode.Impulse);
+    }
+
+    public float getAmmo()
+    {
+        return (float)ammoLoaded/magazineSize;
     }
 }

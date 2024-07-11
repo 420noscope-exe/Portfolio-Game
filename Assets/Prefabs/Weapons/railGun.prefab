@@ -142,8 +142,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9df383b5794a5bd49e0aeed1bb0dd73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 785672399153340500, guid: cc8ca7d65a1b6fce1bd5f356d7951ea7, type: 3}
+  bullet: {fileID: 1491131162079024683, guid: 34610ef785f406eb4a781de79e85ddb0, type: 3}
   muzzle: {fileID: 2641423835599662339}
+  chargeSound: {fileID: 8300000, guid: 61e4187ca2bf32e71b44644a485bb1af, type: 3}
+  fireSound: {fileID: 8300000, guid: 65e414d592c585ae89445e088e955033, type: 3}
+  chargingSound: {fileID: 8300000, guid: e2a0ece64692dc2568d1807451381f8e, type: 3}
 --- !u!82 &8540198699830702266
 AudioSource:
   m_ObjectHideFlags: 0

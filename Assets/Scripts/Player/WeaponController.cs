@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponController : MonoBehaviour
 {
     [SerializeField]private List<GameObject> guns = new List<GameObject>();
     [SerializeField]private GameObject currentGun;
     [SerializeField]private GameObject gunParent;  //"Gun" gameobject in the player prefab.  Position and rotation is already set.
+    [SerializeField]private Image AmmoMeter;
 
     // Start is called before the first frame update
     void Start()
@@ -16,12 +18,27 @@ public class WeaponController : MonoBehaviour
         //    GameObject temp = Instantiate(gun, gunParent.transform);
         //
         //}
+        AmmoMeter = GameObject.Find("AmmoMeter").GetComponent<Image>();
     }
 
     // Update is called once per frame
     void Update()
     {
         setCurrentGun();
+        setAmmoMeter();
+    }
+
+    void setAmmoMeter()
+    {
+        if(currentGun == null)
+        {
+        AmmoMeter.fillAmount = 0;
+        }
+        else
+        {
+        float ammoPercentage = currentGun.GetComponent<Gun>().getAmmo();
+        AmmoMeter.fillAmount = ammoPercentage;
+        }
     }
 
     public int checkButtons()

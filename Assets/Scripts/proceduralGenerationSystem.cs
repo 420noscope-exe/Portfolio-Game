@@ -11,7 +11,7 @@ public class proceduralGenerationSystem : MonoBehaviour
     private Vector3 entrance;
     private Vector3 exit;
     private Vector3 instancePos = new Vector3(0,0,0);
-    [SerializeField] private bool roomIsClear;
+    [SerializeField] public bool roomIsClear = false;
     private GameObject currentRoom;
     private GameObject lastRoom;
     private int lastRoomNum;
@@ -19,7 +19,7 @@ public class proceduralGenerationSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        roomIsClear = false;
+        //roomIsClear = false; //setting this before start method on purpose
         currentRoom = spawnRoom;
         //generateFirstRoom();
         //findRoomExtents(roomArray[0]);

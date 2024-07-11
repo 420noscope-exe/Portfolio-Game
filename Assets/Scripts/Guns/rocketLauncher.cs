@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rocketLauncher : MonoBehaviour
+public class rocketLauncher : MonoBehaviour, Gun
 {
     private AudioSource aSource;
     [SerializeField] private GameObject bullet;
@@ -46,5 +46,10 @@ public class rocketLauncher : MonoBehaviour
         animator.Play("Fire");
         aSource.Play();
         Instantiate(bullet, muzzle.gameObject.transform.position, gameObject.transform.rotation);
+    }
+
+    public float getAmmo()
+    {
+        return (float)ammoLoaded/magazineSize;
     }
 }

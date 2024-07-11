@@ -47,4 +47,9 @@ public class smg : MonoBehaviour, Gun
         aSource.Play();
         Instantiate(bullet, muzzle.gameObject.transform.position, gameObject.transform.rotation);
     }
+
+    public float getAmmo()
+    {
+        return (float)ammoLoaded/magazineSize;
+    }
 }

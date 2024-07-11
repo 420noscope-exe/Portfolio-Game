@@ -6,6 +6,7 @@ public class AndroidAI : MonoBehaviour
 {
     [SerializeField]private List<AudioClip> clips = new List<AudioClip>();
     [SerializeField]private List<AudioClip> hit = new List<AudioClip>();
+    [SerializeField]private AudioClip attackSound;
 
     private AudioSource aSource;
     
@@ -79,7 +80,7 @@ public class AndroidAI : MonoBehaviour
 
         if(!alreadyVoiceLined)
             {
-                playVoiceLine();
+                //playVoiceLine();
                 alreadyVoiceLined = true;
                 Invoke(nameof(resetVoiceline), timBetweenVoiceLines);
             }
@@ -88,24 +89,40 @@ public class AndroidAI : MonoBehaviour
 
     private void chasePlayer()
     {
-        agent.SetDestination(player.transform.position);
-        Vector3 temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
-        gameObject.transform.LookAt(temp);
-        walk();
-        if(!alreadyVoiceLined)
-            {
-                //playVoiceLine();
-                alreadyVoiceLined = true;
-                Invoke(nameof(resetVoiceline), timBetweenVoiceLines);
-            }
+        UnityEngine.AI.NavMeshPath navMeshPath = new UnityEngine.AI.NavMeshPath();
+        agent.CalculatePath(player.transform.position, navMeshPath);
+
+        if(navMeshPath.status == UnityEngine.AI.NavMeshPathStatus.PathComplete)
+        {
+            agent.SetDestination(player.transform.position);
+            Vector3 temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
+            gameObject.transform.LookAt(temp);
+            walk();
+            if(!alreadyVoiceLined)
+              {
+                   //playVoiceLine();
+                   alreadyVoiceLined = true;
+                   Invoke(nameof(resetVoiceline), timBetweenVoiceLines);
+               }
+        }
+        else if(!alreadyPatrolled)
+        {
+            patrolling();
+        }
     }
 
     private void attackPlayer()
     {
+        Vector3 temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
+        gameObject.transform.LookAt(temp);
         agent.SetDestination(transform.position);
-        /*
+        
         if(!alreadyAttacked)
         {
+            muzzle.transform.LookAt(player.transform.position);
+            Instantiate(projectile, muzzle.transform.position, muzzle.transform.rotation);
+            aSource.clip = attackSound;
+            aSource.Play();
             resetHitPlayer();
             agent.Stop();
             attack();
@@ -113,7 +130,7 @@ public class AndroidAI : MonoBehaviour
             Invoke(nameof(resetAttack), timeBetweenAttacks);
             Invoke(nameof(resumeAgent), timeBetweenAttacks);
         }
-        */
+        
     }
 
     //Search walkpoint for navmesh, helper function for patrolling
@@ -167,12 +184,15 @@ public class AndroidAI : MonoBehaviour
 
     public void resumeAgent()
     {
+        if(gameObject != null && agent.enabled == true)  //This prevents "Resume" error if enemy is killed while attacking
+        {
         agent.Resume();
+        }
     }
     //Animations
     private void attack()
     {
-        animator.Play("Attack");
+        animator.Play("Idle");
     }
 
     private void idle()

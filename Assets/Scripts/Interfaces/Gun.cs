@@ -7,4 +7,5 @@ public interface Gun
     // Start is called before the first frame update
     void fire();
 
+    float getAmmo();
 }

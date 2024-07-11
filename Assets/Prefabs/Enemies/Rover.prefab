@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 1900620289757497381}
   - component: {fileID: 3017048002133236069}
   - component: {fileID: 6767895571362851538}
-  - component: {fileID: 5489336178454072826}
   - component: {fileID: 1697690808496493522}
+  - component: {fileID: 5595142308664740875}
   m_Layer: 12
   m_Name: Rover
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,7 +209,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!54 &5489336178454072826
+--- !u!114 &1697690808496493522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4019008056948668980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a2935d2db797e5e802c25ff5314b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 4
+  roverAI: {fileID: 0}
+  agent: {fileID: 0}
+  aSource: {fileID: 0}
+  death: {fileID: 0}
+  hitHurt: {fileID: 0}
+--- !u!54 &5595142308664740875
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,30 +250,11 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &1697690808496493522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4019008056948668980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00a2935d2db797e5e802c25ff5314b64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 4
-  roverAI: {fileID: 0}
-  agent: {fileID: 0}
-  aSource: {fileID: 0}
-  death: {fileID: 0}
-  hitHurt: {fileID: 0}
+  m_CollisionDetection: 2
 --- !u!1001 &1794982874800583338
 PrefabInstance:
   m_ObjectHideFlags: 0

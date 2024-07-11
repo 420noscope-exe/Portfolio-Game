@@ -67,6 +67,7 @@ public class RoverHealthController : MonoBehaviour, HealthController
                 aSource.Play();
                 deathClipPlayed = true;
             }
+            Destroy(gameObject, 1f);
             this.enabled = false;
         }
         

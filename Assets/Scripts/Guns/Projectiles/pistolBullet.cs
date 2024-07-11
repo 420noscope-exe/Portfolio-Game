@@ -26,6 +26,8 @@ public class pistolBullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
+        print("collided with " + col.gameObject.name);
+
         if(col.gameObject.GetComponent<HealthController>() != null)
         {
             healthController = col.gameObject.GetComponent<HealthController>();

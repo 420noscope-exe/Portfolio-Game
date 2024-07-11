@@ -175,7 +175,10 @@ public class RoverAI : MonoBehaviour
 
     public void resumeAgent()
     {
+        if(gameObject != null && agent.enabled == true)  //This prevents "Resume" error if enemy is killed while attacking
+        {
         agent.Resume();
+        }
     }
     //Animations
     private void attack()

@@ -26,4 +26,9 @@ public class debugGun : MonoBehaviour, Gun
             Instantiate(bullet, muzzle.gameObject.transform.position, gameObject.transform.rotation);
         }
     }
+
+    public float getAmmo()
+    {
+        return 1;
+    }
 }
