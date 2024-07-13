@@ -22,4 +22,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
         print("DebugLevel Button Pressed");
     }
+
+    public void StartButton()
+    {
+        SceneManager.LoadScene("MainScene");
+        print("StartLevel Button Pressed");
+    }
 }

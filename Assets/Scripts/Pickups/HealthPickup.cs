@@ -21,7 +21,7 @@ public class HealthPickup : MonoBehaviour, Pickup
 
     public void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.GetComponent<HealthController>() != null)
+        if(col.gameObject.GetComponent<PlayerHealthController>() != null)
         {
             print("Health has been picked up");
             healthController = col.gameObject.GetComponent<HealthController>();

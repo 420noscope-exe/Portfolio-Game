@@ -99,11 +99,11 @@ public class AndroidAI : MonoBehaviour
             gameObject.transform.LookAt(temp);
             walk();
             if(!alreadyVoiceLined)
-              {
-                   //playVoiceLine();
-                   alreadyVoiceLined = true;
-                   Invoke(nameof(resetVoiceline), timBetweenVoiceLines);
-               }
+                {
+                    //playVoiceLine();
+                    alreadyVoiceLined = true;
+                    Invoke(nameof(resetVoiceline), timBetweenVoiceLines);
+                }
         }
         else if(!alreadyPatrolled)
         {
@@ -115,21 +115,34 @@ public class AndroidAI : MonoBehaviour
     {
         Vector3 temp = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.z);
         gameObject.transform.LookAt(temp);
-        agent.SetDestination(transform.position);
-        
-        if(!alreadyAttacked)
+        muzzle.transform.LookAt(player.transform.position);
+
+        RaycastHit hit;
+        Physics.Raycast(muzzle.transform.position, muzzle.transform.forward, out hit, attackRange);
+        //print(hit.collider.gameObject.name);
+        //print(hit.collider.attachedRigidbody.gameObject.layer == playerMask);
+
+        if(hit.collider.CompareTag("Player"))
         {
-            muzzle.transform.LookAt(player.transform.position);
-            Instantiate(projectile, muzzle.transform.position, muzzle.transform.rotation);
-            aSource.clip = attackSound;
-            aSource.Play();
-            resetHitPlayer();
-            agent.Stop();
-            attack();
-            alreadyAttacked = true;
-            Invoke(nameof(resetAttack), timeBetweenAttacks);
-            Invoke(nameof(resumeAgent), timeBetweenAttacks);
+            if(!alreadyAttacked)
+            {
+                agent.SetDestination(transform.position);
+                Instantiate(projectile, muzzle.transform.position, muzzle.transform.rotation);
+                aSource.clip = attackSound;
+                aSource.Play();
+                resetHitPlayer();
+                agent.Stop();
+                attack();
+                alreadyAttacked = true;
+                Invoke(nameof(resetAttack), timeBetweenAttacks);
+                Invoke(nameof(resumeAgent), timeBetweenAttacks);
+            }
         }
+        else
+        {
+            chasePlayer();
+        }
+        
         
     }
 

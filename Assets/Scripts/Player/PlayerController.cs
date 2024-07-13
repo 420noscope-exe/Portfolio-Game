@@ -172,7 +172,7 @@ public class PlayerController : MonoBehaviour
     
     public void restartButton()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         print("Restart Button Pressed");
     }
 

@@ -107,8 +107,8 @@ MonoBehaviour:
   timeBetweenPatrol: 5
   projectile: {fileID: 1687383075591820209, guid: 034651a6278c78144967853111b084ac, type: 3}
   muzzle: {fileID: 7713243510485055643}
-  sightRange: 15
-  attackRange: 7
+  sightRange: 20
+  attackRange: 10
   playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!136 &7009861154998913077
