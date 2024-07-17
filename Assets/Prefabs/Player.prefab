@@ -339,8 +339,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90723b71e78cd1f5a85c78bf63a691b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  acceleration: 0
   cursorLock: 0
   PauseMenu: {fileID: 0}
+  dashClip: {fileID: 8300000, guid: 0de84ccbcd5ccc111a65cb439b40ff46, type: 3}
+  jumpClip: {fileID: 8300000, guid: 091b8f7eaec4036fa9440a0c6a99565f, type: 3}
+  stamina: 0
+  maxStamina: 3
 --- !u!114 &118493711039033015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +361,7 @@ MonoBehaviour:
   health: 0
   maxHealth: 100
   playerController: {fileID: 858247532804795585}
+  HealthMeter: {fileID: 0}
   DeathMenu: {fileID: 0}
   aSource: {fileID: 0}
   hitHurt: {fileID: 8300000, guid: 74279f828dabcb6af931cd726dfd67c9, type: 3}
@@ -374,6 +380,7 @@ MonoBehaviour:
   guns: []
   currentGun: {fileID: 0}
   gunParent: {fileID: 221483798962095808}
+  AmmoMeter: {fileID: 0}
 --- !u!82 &7380955484276870468
 AudioSource:
   m_ObjectHideFlags: 0

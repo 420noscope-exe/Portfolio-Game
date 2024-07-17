@@ -133,11 +133,11 @@ MonoBehaviour:
     m_Bits: 1024
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 10
-  timeBetweenAttacks: 4
+  timeBetweenAttacks: 5
   timBetweenVoiceLines: 6
   timeBetweenPatrol: 2
   dashSpeed: 25
-  sightRange: 21
+  sightRange: 32
   attackRange: 10
   playerInSightRange: 0
   playerInAttackRange: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   vsauceAI: {fileID: 0}
   agent: {fileID: 0}
   aSource: {fileID: 0}
-  death: {fileID: 0}
+  death: {fileID: 8300000, guid: 5d9a3d7c9d6dce198b0f3aedaa36a17b, type: 3}
   hitHurt: {fileID: 0}
 --- !u!1001 &5827636800704186751
 PrefabInstance:

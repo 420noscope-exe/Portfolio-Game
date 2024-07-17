@@ -53,7 +53,7 @@ public class VsauceBossAI : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(action == 1)
         {
@@ -208,7 +208,7 @@ public class VsauceBossAI : MonoBehaviour
 
     private void slag()
     {
-        timeBetweenAttacks = 4f;
+        timeBetweenAttacks = 5f;
         animator.Play("Base.Slag");
         aSource.clip = slagAC;
         aSource.Play();

@@ -140,9 +140,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1975525128}
     - target: {fileID: 858247532804795585, guid: a4f423a17ee29adc1a78e6f2c95b15f3, type: 3}
+      propertyPath: dashClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0de84ccbcd5ccc111a65cb439b40ff46, type: 3}
+    - target: {fileID: 858247532804795585, guid: a4f423a17ee29adc1a78e6f2c95b15f3, type: 3}
+      propertyPath: jumpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 091b8f7eaec4036fa9440a0c6a99565f, type: 3}
+    - target: {fileID: 858247532804795585, guid: a4f423a17ee29adc1a78e6f2c95b15f3, type: 3}
       propertyPath: PauseMenu
       value: 
       objectReference: {fileID: 1529288162}
+    - target: {fileID: 858247532804795585, guid: a4f423a17ee29adc1a78e6f2c95b15f3, type: 3}
+      propertyPath: acceleration
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2306458758441565800, guid: a4f423a17ee29adc1a78e6f2c95b15f3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -365,6 +377,10 @@ PrefabInstance:
       propertyPath: isUnlocked
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7563347613459572187, guid: 90708a6e65d0f4f429c2ad71d62e87c1, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 8887241cb581f9514bacc49751c80ac6, type: 2}
     - target: {fileID: 8768874996305325387, guid: 90708a6e65d0f4f429c2ad71d62e87c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

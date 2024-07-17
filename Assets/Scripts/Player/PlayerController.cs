@@ -3,6 +3,7 @@ using System.Collections.Generic;
 //using UnityEngine.EventSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,9 +21,18 @@ public class PlayerController : MonoBehaviour
 	float kbX;
 	float kbZ;
 	bool sprint;
+    bool isDashing;
 	bool jump;
+    public float acceleration;
 	public bool cursorLock;
     public GameObject PauseMenu;
+    Vector3 velocity;
+    [SerializeField]private AudioClip dashClip, jumpClip;
+    private AudioSource aSource;
+    [SerializeField]private float stamina;
+    [SerializeField]private float maxStamina;
+    private float staminaPercentage;
+    public Image DashMeter;
 	
 // Start is called before the first frame update
 // MAKE SURE TO CORRECTLY SET MASS OF PLAYER'S RIGIDBODY
@@ -34,8 +44,8 @@ public class PlayerController : MonoBehaviour
     	cam = GetComponentInChildren<Camera>();
         moveSpeed = 5;
         airborneMoveSpeed = 4;
-        sprintSpeed = 15;
-        jumpForce = 150;
+        sprintSpeed = 25;
+        jumpForce = 75;
         sensitivity = 200;
         cursorLock = true;
         Cursor.lockState = CursorLockMode.Locked;
@@ -43,6 +53,11 @@ public class PlayerController : MonoBehaviour
         kbIn();
         SprintIn();
         jumpIn();
+        isDashing = false;
+        aSource = gameObject.GetComponent<AudioSource>();
+        stamina = maxStamina;
+        staminaPercentage = stamina/maxStamina;
+        DashMeter = GameObject.Find("DashMeter").GetComponent<Image>();
     }
 
 // Update is called once per frame
@@ -57,6 +72,7 @@ public class PlayerController : MonoBehaviour
         cursorLockInA();
         rotate();
         cursorLockExec();
+        Dash();
     }
     
 //FixedUpdate is called once every .02 seconds
@@ -64,10 +80,10 @@ public class PlayerController : MonoBehaviour
     {
     	//Executing physics
         //rotate();
-        SpeedCap();
+        //Dash();
         move();
         jumpExec();
-    
+        regenStamina();
         //individualGravity();
     }
     
@@ -118,11 +134,11 @@ public class PlayerController : MonoBehaviour
     	return Physics.Raycast(transform.position, Vector3.down, gameObject.GetComponent<CapsuleCollider>().bounds.extents.y + .1f);
     }
     
-    public void SpeedCap()
+    /*public void SpeedCap()
     {
-    	if(isGrounded())
-    	{
-            if(sprint)
+    	//if(isGrounded())
+    	//{
+        //    if(sprint)
             {
             currentMoveSpeed = sprintSpeed;
             }
@@ -130,12 +146,57 @@ public class PlayerController : MonoBehaviour
             {
 			currentMoveSpeed = moveSpeed;
             }    	
-    	}
-    	else
-    	{
-    		currentMoveSpeed = airborneMoveSpeed;
-    	}
+    	//}
+    	//else
+    	//{
+    	//	currentMoveSpeed = airborneMoveSpeed;
+    	//}
         //print(currentMoveSpeed);
+    }*/
+
+    public void Dash()
+    {
+        if(Input.GetButtonDown("Sprint") && !isDashing && stamina >= 1.0f)
+        {
+            Vector3 targetVelocity = transform.TransformDirection(new Vector3((kbX * sprintSpeed), 0 , (kbZ * sprintSpeed)));
+            if(targetVelocity != Vector3.zero)
+            {
+                stamina = stamina - 1.0f;
+                isDashing = true;
+                rb.velocity = targetVelocity;
+                Invoke(nameof(resetDash), 0.25f);
+                aSource.PlayOneShot(dashClip);
+            }
+            else
+            {
+                stamina = stamina - 1.0f;
+                targetVelocity = gameObject.transform.forward * sprintSpeed;
+                isDashing = true;
+                rb.velocity = targetVelocity;
+                Invoke(nameof(resetDash), 0.25f);
+                aSource.PlayOneShot(dashClip);
+            }
+        }
+    }
+
+    private void resetDash()
+    {
+        rb.velocity = rb.velocity.normalized * moveSpeed;
+        isDashing = false;
+    }
+
+    private void regenStamina()
+    {
+        if(!isDashing)
+        {
+            stamina += 1.0f * Time.fixedDeltaTime;
+            if(stamina > 3.0f)
+            {
+                stamina = 3.0f;
+            }
+        }
+        staminaPercentage = stamina/maxStamina;
+        DashMeter.fillAmount = staminaPercentage;
     }
 
     public void cursorLockExec()
@@ -199,11 +260,24 @@ public class PlayerController : MonoBehaviour
     }
     
     public void move()
-    {	
-    	Vector3 movementVector = transform.TransformDirection(new Vector3((kbX * currentMoveSpeed), rb.velocity.y , (kbZ * currentMoveSpeed)));
-        //print(currentMoveSpeed);
-        //print(movementVector);
-    	rb.velocity = movementVector;
+    {	if(!isDashing)
+        {
+            Vector3 targetVelocity = transform.TransformDirection(new Vector3((kbX * moveSpeed), rb.velocity.y , (kbZ * moveSpeed)));
+            //print(currentMoveSpeed);
+            //print(movementVector);
+            Vector3 deltaV = targetVelocity - rb.velocity;
+            Vector3 accel = deltaV/Time.fixedDeltaTime;
+        
+
+            if(accel.sqrMagnitude > acceleration * acceleration)
+            {
+                accel.Normalize();
+                accel *= acceleration;
+            }
+
+    	    rb.velocity += accel * Time.fixedDeltaTime;
+        }
+    	
     }
     
     public void jumpExec()
@@ -211,7 +285,9 @@ public class PlayerController : MonoBehaviour
     	if(isGrounded() && jump)
     	{
     		Vector3 jumpVector = new Vector3(0f, jumpForce, 0f);
-                rb.AddForce(jumpVector, ForceMode.Impulse);
+            rb.AddForce(jumpVector, ForceMode.Impulse);
+            aSource.PlayOneShot(jumpClip);
+
     	}
     }
     

@@ -124,7 +124,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819090798941530738}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 8887241cb581f9514bacc49751c80ac6, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -207,6 +207,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5657944500275551056, guid: 9db63a03636194a5390911bd663c898e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 8887241cb581f9514bacc49751c80ac6, type: 2}
+    - target: {fileID: 6863643102125974499, guid: 9db63a03636194a5390911bd663c898e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 8887241cb581f9514bacc49751c80ac6, type: 2}
     - target: {fileID: 7360725869978858924, guid: 9db63a03636194a5390911bd663c898e, type: 3}
       propertyPath: m_Layer
       value: 8
