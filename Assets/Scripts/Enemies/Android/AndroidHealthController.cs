@@ -26,11 +26,11 @@ public class AndroidHealthController : MonoBehaviour, HealthController
     // FixedUpdate is called once every .02 seconds
     void FixedUpdate()
     {
-        maxHealthCheck();
-        kill();
+        MaxHealthCheck();
+        Kill();
     }
 
-    public bool isDead() //checks to see if the player should be dead
+    public bool IsDead() //checks to see if the player should be dead
     {
         if(health <= 0)
         {
@@ -41,19 +41,19 @@ public class AndroidHealthController : MonoBehaviour, HealthController
         return false;
     }
 
-    public void takeDamage(int damage) //for taking damage
+    public void TakeDamage(int damage) //for taking damage
     {
         health = health - damage;
     }
 
-    public void takeHeal(int heal) //for healing or increasing health
+    public void TakeHeal(int heal) //for healing or increasing health
     {
         health += heal;
     }
 
-    public void kill() //kills player is they are supposed to be dead, disables controls, and bring up DeathMenu
+    public void Kill() //Kills player is they are supposed to be dead, disables controls, and bring up DeathMenu
     {
-        if(isDead())
+        if(IsDead())
         {
             androidAI.enabled = false;
             agent.Stop();
@@ -73,7 +73,7 @@ public class AndroidHealthController : MonoBehaviour, HealthController
         
     }
 
-    public void maxHealthCheck()  //checks to see if player is over maxHealth, and will set health=maxhealth if this happens
+    public void MaxHealthCheck()  //checks to see if player is over maxHealth, and will set health=maxhealth if this happens
     {
         if(health > maxHealth)
         {

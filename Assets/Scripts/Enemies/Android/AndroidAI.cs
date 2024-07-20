@@ -165,14 +165,14 @@ public class AndroidAI : MonoBehaviour
     }
 
     //Damages any HealthController that collides with thing GameObject while it is attacking.
-    public void OnCollisionEnter(Collision col)
+    /*public void OnCollisionEnter(Collision col)
     {
         if(alreadyAttacked && !alreadyHitPlayer && col.gameObject.GetComponent<HealthController>() != null)
         {
-            col.gameObject.GetComponent<HealthController>().takeDamage(20);
+            col.gameObject.GetComponent<HealthController>().TakeDamage(20);
             alreadyHitPlayer = true;
         }
-    }
+    }*/
 
     //reset functions for State Machine
     private void resetAttack()

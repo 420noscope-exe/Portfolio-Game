@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 118493711039033015}
   - component: {fileID: 4715243258025336138}
   - component: {fileID: 7380955484276870468}
+  - component: {fileID: -5312836819810273932}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -340,14 +341,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivity: 100
-  acceleration: 0
+  acceleration: 20
   cursorLock: 0
   PauseMenu: {fileID: 0}
   dashClip: {fileID: 8300000, guid: 0de84ccbcd5ccc111a65cb439b40ff46, type: 3}
   jumpClip: {fileID: 8300000, guid: 091b8f7eaec4036fa9440a0c6a99565f, type: 3}
-  stamina: 0
-  maxStamina: 3
-  DashMeter: {fileID: 0}
+  staminaController: {fileID: 0}
 --- !u!114 &118493711039033015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,10 +361,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
-  playerController: {fileID: 858247532804795585}
-  HealthMeter: {fileID: 0}
-  DeathMenu: {fileID: 0}
-  aSource: {fileID: 0}
   hitHurt: {fileID: 8300000, guid: 74279f828dabcb6af931cd726dfd67c9, type: 3}
 --- !u!114 &4715243258025336138
 MonoBehaviour:
@@ -479,3 +474,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5312836819810273932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306458758441565800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517e51afb350bb78985e939bd47488a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stamina: 0
+  maxStamina: 3
+  staminaMeter: {fileID: 0}

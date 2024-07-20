@@ -23,11 +23,11 @@ public class barrel : MonoBehaviour, HealthController
     // FixedUpdate is called once every .02 seconds
     void FixedUpdate()
     {
-        maxHealthCheck();
-        kill();
+        MaxHealthCheck();
+        Kill();
     }
 
-    public bool isDead() //checks to see if should be dead
+    public bool IsDead() //checks to see if should be dead
     {
         if(health <= 0)
         {
@@ -38,27 +38,27 @@ public class barrel : MonoBehaviour, HealthController
         return false;
     }
 
-    public void takeDamage(int damage) //for taking damage
+    public void TakeDamage(int damage) //for taking damage
     {
         health = health - damage;
     }
 
-    public void takeHeal(int heal) //for healing or increasing health
+    public void TakeHeal(int heal) //for healing or increasing health
     {
         print("You can't heal a barrel, you idiot!");
     }
 
-    public void kill() 
+    public void Kill() 
     {
-        if(isDead())
+        if(IsDead())
         {
             AudioSource.PlayClipAtPoint(clip, GameObject.Find("Player").transform.position, 1.0f);
-            explode();
+            Explode();
         }
         
     }
 
-    void explode()
+    void Explode()
     {
         GameObject spawnedEffect = Instantiate(explosionEffect, gameObject.transform.position, gameObject.transform.rotation);
         Collider[] colliders = Physics.OverlapSphere(gameObject.transform.position, radius);
@@ -71,7 +71,7 @@ public class barrel : MonoBehaviour, HealthController
             }
             if (colliders[i].gameObject.GetComponent<HealthController>() != null)
             {
-                colliders[i].gameObject.GetComponent<HealthController>().takeDamage(damage);
+                colliders[i].gameObject.GetComponent<HealthController>().TakeDamage(damage);
                 GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
             }
         }
@@ -80,7 +80,7 @@ public class barrel : MonoBehaviour, HealthController
         Destroy(gameObject);
     }
 
-    public void maxHealthCheck()  //checks to see if health is over maxHealth, and will set health=maxhealth if this happens
+    public void MaxHealthCheck()  //checks to see if health is over maxHealth, and will set health=maxhealth if this happens
     {
         if(health > maxHealth)
         {

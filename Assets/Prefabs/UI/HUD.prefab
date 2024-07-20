@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 2286581785091756949}
   - component: {fileID: 2961673668988404432}
   m_Layer: 5
-  m_Name: DashMeter
+  m_Name: StaminaMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

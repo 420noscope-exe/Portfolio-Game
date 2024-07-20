@@ -147,7 +147,7 @@ public class RoverAI : MonoBehaviour
     {
         if(alreadyAttacked && !alreadyHitPlayer && col.gameObject.GetComponent<HealthController>() != null)
         {
-            col.gameObject.GetComponent<HealthController>().takeDamage(20);
+            col.gameObject.GetComponent<HealthController>().TakeDamage(20);
             alreadyHitPlayer = true;
         }
     }

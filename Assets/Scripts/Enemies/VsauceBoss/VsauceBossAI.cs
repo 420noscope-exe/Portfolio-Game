@@ -183,7 +183,7 @@ public class VsauceBossAI : MonoBehaviour
     {
         if(alreadyAttacked && col.gameObject.GetComponent<HealthController>() != null)
         {
-            col.gameObject.GetComponent<HealthController>().takeDamage(20);
+            col.gameObject.GetComponent<HealthController>().TakeDamage(20);
         }
     }
 
@@ -335,7 +335,7 @@ public class VsauceBossAI : MonoBehaviour
             }
             if (colliders[i].gameObject.GetComponent<HealthController>() != null && colliders[i].gameObject != gameObject)
             {
-                colliders[i].gameObject.GetComponent<HealthController>().takeDamage(30);
+                colliders[i].gameObject.GetComponent<HealthController>().TakeDamage(30);
             }
         }
     }

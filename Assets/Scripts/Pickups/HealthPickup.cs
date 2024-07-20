@@ -25,7 +25,7 @@ public class HealthPickup : MonoBehaviour, Pickup
         {
             print("Health has been picked up");
             healthController = col.gameObject.GetComponent<HealthController>();
-            healthController.takeHeal(healAmount);
+            healthController.TakeHeal(healAmount);
             Destroy(gameObject);
         }
     }

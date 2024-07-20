@@ -10,11 +10,11 @@ public class PlayerController : MonoBehaviour
 	Rigidbody rb;
 	Camera cam;
 	float moveSpeed;
-	float airborneMoveSpeed;
+	//float airborneMoveSpeed;
 	float currentMoveSpeed;
 	float sprintSpeed;
 	float jumpForce;
-	float individualGravityAcceleration;
+	//float individualGravityAcceleration;
 	float mouseX;
 	float mouseY;
 	[SerializeField]float sensitivity;
@@ -29,10 +29,14 @@ public class PlayerController : MonoBehaviour
     Vector3 velocity;
     [SerializeField]private AudioClip dashClip, jumpClip;
     private AudioSource aSource;
-    [SerializeField]private float stamina;
-    [SerializeField]private float maxStamina;
-    private float staminaPercentage;
-    public Image DashMeter;
+//    [SerializeField]private float stamina;
+//    [SerializeField]private float maxStamina;
+//    private float staminaPercentage;
+//    public Image DashMeter;
+    public StaminaController staminaController;
+    bool isJumping;
+    Vector3 targetCameraRotation;
+    private LayerMask playermask;
 	
 // Start is called before the first frame update
 // MAKE SURE TO CORRECTLY SET MASS OF PLAYER'S RIGIDBODY
@@ -42,10 +46,11 @@ public class PlayerController : MonoBehaviour
     	//Initializing variables
     	rb = gameObject.GetComponent<Rigidbody>();
     	cam = GetComponentInChildren<Camera>();
+        staminaController = gameObject.GetComponent<StaminaController>();
         moveSpeed = 5;
-        airborneMoveSpeed = 4;
+        //airborneMoveSpeed = 4;
         sprintSpeed = 25;
-        jumpForce = 75;
+        jumpForce = 150;
         //sensitivity = 200;
         cursorLock = true;
         Cursor.lockState = CursorLockMode.Locked;
@@ -54,10 +59,13 @@ public class PlayerController : MonoBehaviour
         SprintIn();
         jumpIn();
         isDashing = false;
+        isJumping = false;
         aSource = gameObject.GetComponent<AudioSource>();
-        stamina = maxStamina;
-        staminaPercentage = stamina/maxStamina;
-        DashMeter = GameObject.Find("DashMeter").GetComponent<Image>();
+        //stamina = maxStamina;
+        //staminaPercentage = stamina/maxStamina;
+        //DashMeter = GameObject.Find("DashMeter").GetComponent<Image>();
+        targetCameraRotation = Vector3.zero;
+        playermask = ~(LayerMask.GetMask("Player"));
     }
 
 // Update is called once per frame
@@ -83,7 +91,7 @@ public class PlayerController : MonoBehaviour
         //Dash();
         move();
         jumpExec();
-        regenStamina();
+        //regenStamina();
         //individualGravity();
     }
     
@@ -131,7 +139,12 @@ public class PlayerController : MonoBehaviour
 //Additional utilty functions
     public bool isGrounded()
     {
-    	return Physics.Raycast(transform.position, Vector3.down, gameObject.GetComponent<CapsuleCollider>().bounds.extents.y + .1f);
+        Vector3 playerFeetPos = transform.position;
+        playerFeetPos.y = playerFeetPos.y - gameObject.GetComponent<CapsuleCollider>().bounds.extents.y;
+        print("isGrounded was run" + playerFeetPos);
+        return Physics.CheckSphere(playerFeetPos, .25f, playermask);
+    	
+        //return Physics.Raycast(transform.position, Vector3.down, gameObject.GetComponent<CapsuleCollider>().bounds.extents.y + .1f);
     }
     
     /*public void SpeedCap()
@@ -156,12 +169,12 @@ public class PlayerController : MonoBehaviour
 
     public void Dash()
     {
-        if(Input.GetButtonDown("Sprint") && !isDashing && stamina >= 1.0f)
+        if(Input.GetButtonDown("Sprint") && !isDashing && staminaController.CanDash())
         {
             Vector3 targetVelocity = transform.TransformDirection(new Vector3((kbX * sprintSpeed), 0 , (kbZ * sprintSpeed)));
             if(targetVelocity != Vector3.zero)
             {
-                stamina = stamina - 1.0f;
+                staminaController.UseStamina();
                 isDashing = true;
                 rb.velocity = targetVelocity;
                 Invoke(nameof(resetDash), 0.25f);
@@ -169,7 +182,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                stamina = stamina - 1.0f;
+                staminaController.UseStamina();
                 targetVelocity = gameObject.transform.forward * sprintSpeed;
                 isDashing = true;
                 rb.velocity = targetVelocity;
@@ -185,7 +198,17 @@ public class PlayerController : MonoBehaviour
         isDashing = false;
     }
 
-    private void regenStamina()
+    public bool GetIsDashing()
+    {
+        return isDashing;
+    }
+
+    private void resetJump()
+    {
+        isJumping = false;
+    }
+
+    /*private void regenStamina()
     {
         if(!isDashing)
         {
@@ -197,7 +220,7 @@ public class PlayerController : MonoBehaviour
         }
         staminaPercentage = stamina/maxStamina;
         DashMeter.fillAmount = staminaPercentage;
-    }
+    }*/
 
     public void cursorLockExec()
     {
@@ -249,20 +272,36 @@ public class PlayerController : MonoBehaviour
     	Vector3 playerRotation = new Vector3(0f, mouseX, 0f) * sensitivity;
     	Vector3 cameraRotation = new Vector3(mouseY, 0f, 0f) * sensitivity;
     	
+        
+
     	gameObject.transform.localEulerAngles += playerRotation * Time.deltaTime;
 
-        if (cam.transform.rotation.eulerAngles.z != 180)
+        //if (cam.transform.rotation.eulerAngles.z != 180)
+        //{
+        //    targetCameraRotation += (-cameraRotation) * Time.deltaTime;
+        //    cam.transform.localEulerAngles = targetCameraRotation;
+        //}
+        //else if (cam.transform.rotation.eulerAngles.x + (-cameraRotation.x) > 270)
+        //{
+        //    cam.transform.rotation = Quaternion.Euler(new Vector3(270.0f, gameObject.transform.rotation.eulerAngles.y, 0f));
+        //}
+        //else
+        //{
+        //    cam.transform.rotation = Quaternion.Euler(new Vector3(90.0f, gameObject.transform.rotation.eulerAngles.y , 0f));
+        //}
+
+        targetCameraRotation += (-cameraRotation) * Time.deltaTime;
+
+        if(targetCameraRotation.x > 90)
         {
-            cam.transform.localEulerAngles += (-cameraRotation) * Time.deltaTime;
+            targetCameraRotation.x = 90;
         }
-        else if (cam.transform.rotation.eulerAngles.x > 260)
+        else if(targetCameraRotation.x < -90)
         {
-            cam.transform.rotation = Quaternion.Euler(new Vector3(270.0f, gameObject.transform.rotation.eulerAngles.y, 0f));
+            targetCameraRotation.x = -90;
         }
-        else
-        {
-            cam.transform.rotation = Quaternion.Euler(new Vector3(90.0f, gameObject.transform.rotation.eulerAngles.y , 0f));
-        }
+        cam.transform.localEulerAngles = targetCameraRotation;
+        //print(targetCameraRotation);
     }
     
     public void move()
@@ -288,12 +327,13 @@ public class PlayerController : MonoBehaviour
     
     public void jumpExec()
     {
-    	if(isGrounded() && jump)
+    	if(jump && !isJumping && isGrounded())
     	{
     		Vector3 jumpVector = new Vector3(0f, jumpForce, 0f);
             rb.AddForce(jumpVector, ForceMode.Impulse);
             aSource.PlayOneShot(jumpClip);
-
+            isJumping = true;
+            Invoke(nameof(resetJump), .25f);
     	}
     }
     

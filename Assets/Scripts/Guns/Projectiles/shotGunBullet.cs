@@ -31,7 +31,7 @@ public class shotGunBullet : MonoBehaviour
         if(col.gameObject.GetComponent<HealthController>() != null)
         {
             healthController = col.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
+            healthController.TakeDamage(damage);
             GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
         }
         if(!canRicochet)

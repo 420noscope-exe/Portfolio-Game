@@ -32,7 +32,7 @@ public class railGunBullet : MonoBehaviour
         if(col.gameObject.GetComponent<HealthController>() != null)
         {
             healthController = col.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
+            healthController.TakeDamage(damage);
             GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
         }
         if(!canRicochet)
@@ -57,13 +57,13 @@ public class railGunBullet : MonoBehaviour
         if(col.attachedRigidbody != null && col.attachedRigidbody.gameObject.GetComponent<HealthController>() != null)
         {
             healthController = col.attachedRigidbody.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
+            healthController.TakeDamage(damage);
             GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
         }
         else if(col.gameObject.GetComponent<HealthController>() != null)
         {
             healthController = col.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
+            healthController.TakeDamage(damage);
             GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
         }
     }

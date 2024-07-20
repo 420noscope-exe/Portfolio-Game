@@ -29,7 +29,7 @@ public class RoomDaemon : MonoBehaviour
 
         foreach(GameObject enemy in enemies)
         {
-            if (enemy == null || enemy.GetComponent<HealthController>().isDead())
+            if (enemy == null || enemy.GetComponent<HealthController>().IsDead())
             deadEnemyCount++;
         }
 

@@ -6,82 +6,85 @@ using UnityEngine.UI;
 public class PlayerHealthController : MonoBehaviour, HealthController
 {
 
-    public int health;
-    public int maxHealth = 100;
-    public PlayerController playerController;
-    public Image HealthMeter;
-    public GameObject DeathMenu;
-    public AudioSource aSource;
-    public AudioClip hitHurt;
+    [SerializeField] private int health;
+    [SerializeField] private int maxHealth = 100;
+    private PlayerController playerController;
+    private Image healthMeter;
+    private GameObject deathMenu;
+    private AudioSource aSource;
+    [SerializeField] private AudioClip hitHurt;
 
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
         aSource = gameObject.GetComponent<AudioSource>();
+        playerController = gameObject.GetComponent<PlayerController>();
+        healthMeter = GameObject.Find("HealthMeter").GetComponent<Image>();
+        deathMenu = GameObject.Find("DeathMenu");
     }
 
+    // Update is called once per frame
     void Update()
     {
-        setHealthMeter();
+        SetHealthMeter();
     }
-
-    private void setHealthMeter()
-    {
-        float healthPercentage = (float)health/maxHealth;
-        HealthMeter.fillAmount = healthPercentage;
-    }
-
+    
     // FixedUpdate is called once every .02 seconds
     void FixedUpdate()
     {
-        maxHealthCheck();
-        kill();
+        MaxHealthCheck();
+        Kill();
     }
 
-    public bool isDead() //checks to see if the player should be dead
+    private void SetHealthMeter()
+    {
+        float healthPercentage = (float)health/maxHealth;
+        healthMeter.fillAmount = healthPercentage;
+    }
+
+    public void MaxHealthCheck()  //checks to see if player is over maxHealth, and will set health=maxhealth if this happens
+    {
+        if(health > maxHealth)
+        {
+            health = maxHealth;
+        }
+    }
+
+    public bool IsDead() //checks to see if the player should be dead
     {
         if(health <= 0)
         {
             health = 0;
             return true;
         }
-
         return false;
     }
 
-    public void takeDamage(int damage) //for taking damage
+    public void TakeDamage(int damage) //for taking damage
     {
-        if(!isDead())
+        if(!IsDead())
         {
         health = health - damage;
         aSource.PlayOneShot(hitHurt);
         }
     }
 
-    public void takeHeal(int heal) //for healing or increasing health
+    public void TakeHeal(int heal) //for healing or increasing health
     {
         health += heal;
     }
 
-    public void kill() //kills player is they are supposed to be dead, disables controls, and bring up DeathMenu
+    public void Kill() //kills player is they are supposed to be dead, disables controls, and bring up DeathMenu
     {
-        if(isDead())
+        if(IsDead())
         {
             Cursor.lockState = CursorLockMode.None;
             playerController.enabled = false;
             gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-            DeathMenu.SetActive(true);
+            deathMenu.SetActive(true);
             //gameObject.GetComponent<HealthController>().enabled = false;
         }
         
-    }
-
-    public void maxHealthCheck()  //checks to see if player is over maxHealth, and will set health=maxhealth if this happens
-    {
-        if(health > maxHealth)
-        {
-            health = maxHealth;
-        }
     }
 }
