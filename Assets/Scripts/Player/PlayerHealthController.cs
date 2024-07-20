@@ -22,6 +22,7 @@ public class PlayerHealthController : MonoBehaviour, HealthController
         playerController = gameObject.GetComponent<PlayerController>();
         healthMeter = GameObject.Find("HealthMeter").GetComponent<Image>();
         deathMenu = GameObject.Find("DeathMenu");
+        deathMenu.SetActive(false);
     }
 
     // Update is called once per frame

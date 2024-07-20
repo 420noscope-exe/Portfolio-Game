@@ -68,6 +68,7 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
      <Compile Include="Assets/Scripts/Guns/Projectiles/shotGunBullet.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
+     <Compile Include="Assets/Scripts/UI/PauseMenuManager.cs" />
      <Compile Include="Assets/Scripts/Guns/pistol.cs" />
      <Compile Include="Assets/Scripts/Enemies/Android/AndroidAI.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />

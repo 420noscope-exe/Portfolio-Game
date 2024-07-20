@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     bool isDashing;
 	bool jump;
     public float acceleration;
-	public bool cursorLock;
+	//public bool cursorLock;
     public GameObject PauseMenu;
     Vector3 velocity;
     [SerializeField]private AudioClip dashClip, jumpClip;
@@ -52,8 +52,8 @@ public class PlayerController : MonoBehaviour
         sprintSpeed = 25;
         jumpForce = 150;
         //sensitivity = 200;
-        cursorLock = true;
-        Cursor.lockState = CursorLockMode.Locked;
+        //cursorLock = true;
+        //Cursor.lockState = CursorLockMode.Locked;
         mouseIn();
         kbIn();
         SprintIn();
@@ -76,10 +76,10 @@ public class PlayerController : MonoBehaviour
         kbIn();
         SprintIn();
         jumpIn();
-        cursorLockIn();
-        cursorLockInA();
+        //cursorLockIn();
+        //cursorLockInA();
         rotate();
-        cursorLockExec();
+        //cursorLockExec();
         Dash();
     }
     
@@ -118,23 +118,23 @@ public class PlayerController : MonoBehaviour
     	jump = Input.GetButton("Jump");
     }
     
-    public void cursorLockIn()
+    /*public void cursorLockIn()
     {
     	if(Input.GetButtonDown("Menu"))
     	{
             print("Menu Button Pressed");
     		cursorLock = !cursorLock;
     	}
-    }
+    }*/
 
-    public void cursorLockInA()
+    /*public void cursorLockInA()
     {
     	if(Input.GetButtonDown("Cancel"))
     	{
             print("Cancel Button Pressed");
     	
     	}
-    }
+    }*/
     
 //Additional utilty functions
     public bool isGrounded()
@@ -222,7 +222,7 @@ public class PlayerController : MonoBehaviour
         DashMeter.fillAmount = staminaPercentage;
     }*/
 
-    public void cursorLockExec()
+    /*public void cursorLockExec()
     {
         if(cursorLock)
         {
@@ -234,7 +234,7 @@ public class PlayerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Pause();
         }
-    }
+    }*/
 
     public void setSensitivity(float sense)
     {
@@ -242,7 +242,7 @@ public class PlayerController : MonoBehaviour
         sensitivity = sense;
     }
 
-    public void Resume()
+    /*public void Resume()
     {
         Time.timeScale = 1f;
         PauseMenu.SetActive(false);
@@ -264,7 +264,7 @@ public class PlayerController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         print("Restart Button Pressed");
-    }
+    }*/
 
 //Physics execution functions
     public void rotate()
