@@ -25,7 +25,7 @@ public class smg : MonoBehaviour, Gun
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetButton("Fire1") && Time.time > nextFire && ammoLoaded > 0 && Time.time > nextReload)
         {

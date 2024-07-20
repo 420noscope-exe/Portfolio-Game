@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
 	float individualGravityAcceleration;
 	float mouseX;
 	float mouseY;
-	float sensitivity;
+	[SerializeField]float sensitivity;
 	float kbX;
 	float kbZ;
 	bool sprint;
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         airborneMoveSpeed = 4;
         sprintSpeed = 25;
         jumpForce = 75;
-        sensitivity = 200;
+        //sensitivity = 200;
         cursorLock = true;
         Cursor.lockState = CursorLockMode.Locked;
         mouseIn();
@@ -211,6 +211,12 @@ public class PlayerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Pause();
         }
+    }
+
+    public void setSensitivity(float sense)
+    {
+        print(sense);
+        sensitivity = sense;
     }
 
     public void Resume()

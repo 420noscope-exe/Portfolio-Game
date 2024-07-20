@@ -56,6 +56,7 @@ Transform:
   - {fileID: 4923451735485606990}
   - {fileID: 5713296750741521456}
   - {fileID: 66991947896556633}
+  - {fileID: 7856139304995509645}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1875661910394372341
@@ -85,7 +86,7 @@ Transform:
   m_GameObject: {fileID: 1875661910394372341}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.31, y: 5.87, z: 2.08}
+  m_LocalPosition: {x: 5.04, y: 4.69, z: 2.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -303,6 +304,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4504715383602494965, guid: 160759f88652fcf36a7123839fe126e2, type: 3}
   m_PrefabInstance: {fileID: 172726894473265683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1271768060604039304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8768874996305325387}
+    m_Modifications:
+    - target: {fileID: 8641132181616349119, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_Name
+      value: lights
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.0143356
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.848327
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+--- !u!4 &7856139304995509645 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8980361563797984517, guid: 32a8481ba94c3349aa1c17ec9ce44f69, type: 3}
+  m_PrefabInstance: {fileID: 1271768060604039304}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1310512983452777932
 PrefabInstance:
@@ -1913,6 +1976,10 @@ PrefabInstance:
     - target: {fileID: 293223143373077024, guid: 81f9f8dda22679dee8fc9a90d8649098, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2063000566432900440, guid: 81f9f8dda22679dee8fc9a90d8649098, type: 3}
+      propertyPath: isUnlocked
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -339,6 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90723b71e78cd1f5a85c78bf63a691b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sensitivity: 100
   acceleration: 0
   cursorLock: 0
   PauseMenu: {fileID: 0}
@@ -346,6 +347,7 @@ MonoBehaviour:
   jumpClip: {fileID: 8300000, guid: 091b8f7eaec4036fa9440a0c6a99565f, type: 3}
   stamina: 0
   maxStamina: 3
+  DashMeter: {fileID: 0}
 --- !u!114 &118493711039033015
 MonoBehaviour:
   m_ObjectHideFlags: 0
