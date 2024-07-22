@@ -414,6 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies: []
   door: {fileID: 3668397820913065680}
+  cleanupDistance: 64
 --- !u!1 &7665802420685738619
 GameObject:
   m_ObjectHideFlags: 0

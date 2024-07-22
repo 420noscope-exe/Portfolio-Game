@@ -15,6 +15,7 @@ public class proceduralGenerationSystem : MonoBehaviour
     private GameObject currentRoom;
     private GameObject lastRoom;
     private int lastRoomNum;
+    private GameObject hallwayInstance;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +36,7 @@ public class proceduralGenerationSystem : MonoBehaviour
     {
         findExit(room);
         instancePos = new Vector3(exit.x,0,(exit.z - 3.15f));
-        GameObject hallwayInstance = Instantiate(hallway, instancePos, hallway.transform.rotation);
+        hallwayInstance = Instantiate(hallway, instancePos, hallway.transform.rotation);
         print("Instantiated hallway at " + instancePos);
     }
 
@@ -59,7 +60,7 @@ public class proceduralGenerationSystem : MonoBehaviour
             print("instantiated room" + instancePos);
             roomIsClear = false;
             currentRoom = roomInstance;
-
+            hallwayInstance.transform.SetParent(currentRoom.transform, true);
         }
     }
 
