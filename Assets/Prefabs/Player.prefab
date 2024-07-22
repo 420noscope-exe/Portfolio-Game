@@ -200,11 +200,11 @@ GameObject:
   - component: {fileID: 5341452640521109343}
   - component: {fileID: 7483053225910505848}
   - component: {fileID: 6549397732681105741}
-  - component: {fileID: 858247532804795585}
   - component: {fileID: 118493711039033015}
   - component: {fileID: 4715243258025336138}
   - component: {fileID: 7380955484276870468}
   - component: {fileID: -5312836819810273932}
+  - component: {fileID: 8536672668626378742}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -328,25 +328,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 2
---- !u!114 &858247532804795585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2306458758441565800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90723b71e78cd1f5a85c78bf63a691b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sensitivity: 100
-  acceleration: 20
-  cursorLock: 0
-  PauseMenu: {fileID: 0}
-  dashClip: {fileID: 8300000, guid: 0de84ccbcd5ccc111a65cb439b40ff46, type: 3}
-  jumpClip: {fileID: 8300000, guid: 091b8f7eaec4036fa9440a0c6a99565f, type: 3}
-  staminaController: {fileID: 0}
 --- !u!114 &118493711039033015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,3 +470,25 @@ MonoBehaviour:
   stamina: 0
   maxStamina: 3
   staminaMeter: {fileID: 0}
+--- !u!114 &8536672668626378742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2306458758441565800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b983b49b31426de8ca59555b5e495513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  maxAcceleration: 20
+  sensitivity: 100
+  dashSpeed: 25
+  dashDuration: 0.25
+  jumpForce: 150
+  checkSphereRadius: 0.25
+  checkSphereYOffset: 0
+  dashClip: {fileID: 8300000, guid: 0de84ccbcd5ccc111a65cb439b40ff46, type: 3}
+  jumpClip: {fileID: 8300000, guid: 091b8f7eaec4036fa9440a0c6a99565f, type: 3}

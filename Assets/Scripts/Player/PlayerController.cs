@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 //using UnityEngine.EventSystem;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class OldPlayerController : MonoBehaviour
 {
 	Rigidbody rb;
 	Camera cam;
@@ -25,8 +25,8 @@ public class PlayerController : MonoBehaviour
 	bool jump;
     public float acceleration;
 	//public bool cursorLock;
-    public GameObject PauseMenu;
-    Vector3 velocity;
+    //public GameObject PauseMenu;
+    //Vector3 velocity;
     [SerializeField]private AudioClip dashClip, jumpClip;
     private AudioSource aSource;
 //    [SerializeField]private float stamina;
