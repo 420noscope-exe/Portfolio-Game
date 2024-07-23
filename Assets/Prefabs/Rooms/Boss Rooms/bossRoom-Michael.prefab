@@ -473,7 +473,7 @@ MonoBehaviour:
   enemies:
   - {fileID: 4253528740679944718}
   door: {fileID: 6846505381613789090}
-  cleanupDistance: 4
+  cleanupDistance: 43
 --- !u!1001 &48980856132530748
 PrefabInstance:
   m_ObjectHideFlags: 0

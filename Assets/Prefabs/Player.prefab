@@ -488,7 +488,7 @@ MonoBehaviour:
   dashSpeed: 25
   dashDuration: 0.25
   jumpForce: 150
-  checkSphereRadius: 0.25
-  checkSphereYOffset: 0
+  checkSphereRadius: 0.45
+  checkSphereYOffset: 0.35
   dashClip: {fileID: 8300000, guid: 0de84ccbcd5ccc111a65cb439b40ff46, type: 3}
   jumpClip: {fileID: 8300000, guid: 091b8f7eaec4036fa9440a0c6a99565f, type: 3}

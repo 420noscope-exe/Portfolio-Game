@@ -51,6 +51,7 @@ public class proceduralGenerationSystem : MonoBehaviour
     {
         if(roomIsClear)
         {
+            Destroy(lastRoom);
             lastRoom = currentRoom;
             currentRoom = getRandomRoom();
             generateHallway(lastRoom);
