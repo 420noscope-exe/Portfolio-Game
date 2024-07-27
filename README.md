@@ -1,11 +1,13 @@
 # Portfolio-Game
 
-##Currently being hosted on: 
+## Currently being hosted on: 
 - [http://pasquale.io:81/portfolio](http://pasquale.io:81/portfolio)
+
 **OR**
+
 - [http://pasquale.io/portfolio](http://pasquale.io/portfolio)
 
-##Features
+## Features
 - Statemachine NavMesh AI
 - Procedural Generation System
 - Fast Paced, Physics RigidBody Based PlayerController
