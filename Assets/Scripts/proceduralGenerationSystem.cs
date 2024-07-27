@@ -112,7 +112,7 @@ public class proceduralGenerationSystem : MonoBehaviour
         int roomNum = Random.Range(0, roomArray.Length);
         if(roomNum == lastRoomNum)
         {
-            return getRandomRoom();
+            return getRandomRoom(); //BAM RECURSION
         }
         else
         {
