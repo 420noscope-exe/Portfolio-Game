@@ -15,6 +15,8 @@ public class RoverAI : MonoBehaviour
     public UnityEngine.AI.NavMeshAgent agent;
 
     private GameObject player;
+    [SerializeField]private GameObject hammerObj;
+    private RoverHammer hammer;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
@@ -39,6 +41,7 @@ public class RoverAI : MonoBehaviour
         animator = gameObject.GetComponentInChildren<Animator>();
         aSource = gameObject.GetComponent<AudioSource>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        hammer = hammerObj.GetComponent<RoverHammer>();
     }
 
     // Update is called once per frame
@@ -50,6 +53,14 @@ public class RoverAI : MonoBehaviour
         if (!playerInSightRange && !playerInAttackRange && !alreadyPatrolled) patrolling();
         if (playerInSightRange && !playerInAttackRange && !alreadyAttacked) chasePlayer();
         if (playerInSightRange && playerInAttackRange) attackPlayer();
+    }
+
+    private void FixedUpdate()
+    {
+        if(alreadyAttacked && !alreadyHitPlayer)
+        {
+            hammer.canAttack = true;
+        }
     }
 
     //The three states for the state machine
@@ -156,6 +167,7 @@ public class RoverAI : MonoBehaviour
     private void resetAttack()
     {
         alreadyAttacked = false;
+        hammer.canAttack = false;
     }
 
     private void resetVoiceline()

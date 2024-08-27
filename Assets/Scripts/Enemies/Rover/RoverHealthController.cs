@@ -11,7 +11,7 @@ public class RoverHealthController : MonoBehaviour, HealthController
     public UnityEngine.AI.NavMeshAgent agent;
     public AudioSource aSource;
     public AudioClip death, hitHurt;
-
+    [SerializeField]private List<Rigidbody> bodyParts = new List<Rigidbody>();
     private bool deathClipPlayed = false;
 
     // Start is called before the first frame update
@@ -21,6 +21,11 @@ public class RoverHealthController : MonoBehaviour, HealthController
         roverAI = gameObject.GetComponent<RoverAI>();
         agent = gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
         aSource = gameObject.GetComponent<AudioSource>();
+        Rigidbody[] tempBodyParts = gameObject.GetComponentsInChildren<Rigidbody>();
+        foreach(Rigidbody bodyPart in tempBodyParts)
+        {
+            bodyParts.Add(bodyPart);
+        }
     }
 
     // FixedUpdate is called once every .02 seconds
@@ -67,7 +72,8 @@ public class RoverHealthController : MonoBehaviour, HealthController
                 aSource.Play();
                 deathClipPlayed = true;
             }
-            Destroy(gameObject, 1f);
+            Ragdoll();
+            //Destroy(gameObject, 1f);
             this.enabled = false;
         }
         
@@ -78,6 +84,16 @@ public class RoverHealthController : MonoBehaviour, HealthController
         if(health > maxHealth)
         {
             health = maxHealth;
+        }
+    }
+
+    private void Ragdoll()
+    {
+        gameObject.GetComponent<CapsuleCollider>().enabled = false;
+        gameObject.GetComponentInChildren<Animator>().enabled = false;
+        foreach(Rigidbody bodyPart in bodyParts)
+        {
+            bodyPart.isKinematic = false;
         }
     }
 }

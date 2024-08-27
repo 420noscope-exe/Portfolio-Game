@@ -11,6 +11,7 @@ public class VsauceBossHealthController : MonoBehaviour, HealthController
     public UnityEngine.AI.NavMeshAgent agent;
     public AudioSource aSource;
     public AudioClip death, hitHurt;
+    [SerializeField]private List<Rigidbody> bodyParts = new List<Rigidbody>();
 
     private bool deathClipPlayed = false;
 
@@ -21,6 +22,11 @@ public class VsauceBossHealthController : MonoBehaviour, HealthController
         vsauceAI = gameObject.GetComponent<VsauceBossAI>();
         agent = gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
         aSource = gameObject.GetComponent<AudioSource>();
+        Rigidbody[] tempBodyParts = gameObject.GetComponentsInChildren<Rigidbody>();
+        foreach(Rigidbody bodyPart in tempBodyParts)
+        {
+            bodyParts.Add(bodyPart);
+        }
     }
 
     // FixedUpdate is called once every .02 seconds
@@ -57,14 +63,18 @@ public class VsauceBossHealthController : MonoBehaviour, HealthController
         {
             vsauceAI.enabled = false;
             agent.Stop();
+            agent.enabled = false;
             gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            gameObject.GetComponent<Rigidbody>().useGravity = true;
             if(!deathClipPlayed)
             {
                 aSource.clip = death;
                 aSource.Play();
                 deathClipPlayed = true;
             }
+            Ragdoll();
+            //Destroy(gameObject, 1f);
             this.enabled = false;
         }
         
@@ -75,6 +85,16 @@ public class VsauceBossHealthController : MonoBehaviour, HealthController
         if(health > maxHealth)
         {
             health = maxHealth;
+        }
+    }
+
+    private void Ragdoll()
+    {
+        gameObject.GetComponent<CapsuleCollider>().enabled = false;
+        gameObject.GetComponentInChildren<Animator>().enabled = false;
+        foreach(Rigidbody bodyPart in bodyParts)
+        {
+            bodyPart.isKinematic = false;
         }
     }
 }
