@@ -65,6 +65,8 @@ public class PlayerController : MonoBehaviour
         playerMask = ~(LayerMask.GetMask("Player"));
         
         GetInputs(); //Initialize Input Properties
+
+        sensitivity = PlayerPrefs.GetFloat("sensitivity", 100);
     }
 
     // Update is called once per frame
@@ -210,5 +212,7 @@ public class PlayerController : MonoBehaviour
     {
         print(sense);
         sensitivity = sense;
+        PlayerPrefs.SetFloat("sensitivity", sense);
+        PlayerPrefs.Save();
     }
 }

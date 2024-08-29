@@ -3762,6 +3762,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &644839798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8577211239312034605, guid: 3ca60084cd3f4d926b7e8fc089cbdd86, type: 3}
+  m_PrefabInstance: {fileID: 1355878540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &644839801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644839798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060e84390ff151ed5b364d3d1d2c5d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &672419984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6630,7 +6647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597782604480029359, guid: 3ca60084cd3f4d926b7e8fc089cbdd86, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3465195141760592188, guid: 3ca60084cd3f4d926b7e8fc089cbdd86, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6682,28 +6699,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5413567018110650697, guid: 3ca60084cd3f4d926b7e8fc089cbdd86, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.33110368
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5413567018110650697, guid: 3ca60084cd3f4d926b7e8fc089cbdd86, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8594099355148612528, guid: 3ca60084cd3f4d926b7e8fc089cbdd86, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.33110368
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8594099355148612528, guid: 3ca60084cd3f4d926b7e8fc089cbdd86, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8594099355148612528, guid: 3ca60084cd3f4d926b7e8fc089cbdd86, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.33110368
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8577211239312034605, guid: 3ca60084cd3f4d926b7e8fc089cbdd86, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 644839801}
   m_SourcePrefab: {fileID: 100100000, guid: 3ca60084cd3f4d926b7e8fc089cbdd86, type: 3}
 --- !u!1001 &1365836940
 PrefabInstance:

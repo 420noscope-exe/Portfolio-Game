@@ -265,9 +265,10 @@ public class VsauceBossAI : MonoBehaviour
     {
         float delayInMs = 0.6f;
         float ms = Time.deltaTime;
-
+        gameObject.transform.LookAt(player.transform.position);
         while(ms <= delayInMs )
             {
+                gameObject.transform.LookAt(player.transform.position);
                 ms += Time.deltaTime;
                 yield return null;
             }

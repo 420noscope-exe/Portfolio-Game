@@ -74,7 +74,7 @@ public class AndroidHealthController : MonoBehaviour, HealthController
                 deathClipPlayed = true;
             }
             Ragdoll();
-            Destroy(gameObject, 1f);
+            //Destroy(gameObject, 1f);
             this.enabled = false;
         }
         
