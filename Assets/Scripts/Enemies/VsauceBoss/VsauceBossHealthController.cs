@@ -13,6 +13,8 @@ public class VsauceBossHealthController : MonoBehaviour, HealthController
     public AudioClip death, hitHurt;
     [SerializeField]private List<Rigidbody> bodyParts = new List<Rigidbody>();
 
+    private BossBar bossBar;
+
     private bool deathClipPlayed = false;
 
     // Start is called before the first frame update
@@ -27,6 +29,14 @@ public class VsauceBossHealthController : MonoBehaviour, HealthController
         {
             bodyParts.Add(bodyPart);
         }
+        bossBar = GameObject.Find("BossBar").GetComponent<BossBar>();
+        bossBar.EnableBar();
+        bossBar.setBossName("Vsauce, Michael Here");
+    }
+
+    void Update()
+    {
+        bossBar.SetHealth(health, maxHealth);
     }
 
     // FixedUpdate is called once every .02 seconds
@@ -74,6 +84,8 @@ public class VsauceBossHealthController : MonoBehaviour, HealthController
                 deathClipPlayed = true;
             }
             Ragdoll();
+            bossBar.setBossName("");
+            bossBar.DisableBar();
             //Destroy(gameObject, 1f);
             this.enabled = false;
         }

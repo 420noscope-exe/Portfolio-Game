@@ -8,12 +8,14 @@ public class PauseMenuManager : MonoBehaviour
 {
     [SerializeField] private bool isPaused;
     private GameObject pauseMenu;
+    private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
         isPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenu = GameObject.Find("PauseMenu");
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -44,7 +46,7 @@ public class PauseMenuManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Pause();
         }
-        if(!isPaused)
+        else if(!isPaused && !player.GetComponent<PlayerHealthController>().IsDead())
         {
             Cursor.lockState = CursorLockMode.Locked;
             Resume();

@@ -8,6 +8,8 @@ public class pistol : MonoBehaviour, Gun
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject muzzle;
 
+    private PlayerHealthController playerHealthController;
+
     private Animator animator;
 
     float fireRate =  1f/(600f/60f); //value in middle is measured in Rounds per minute
@@ -22,12 +24,13 @@ public class pistol : MonoBehaviour, Gun
     {
         aSource = gameObject.GetComponent<AudioSource>();
         animator = gameObject.GetComponent<Animator>();
+        playerHealthController = GameObject.FindWithTag("Player").GetComponent<PlayerHealthController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Time.time > nextFire && ammoLoaded > 0 && Time.time > nextReload)
+        if (Input.GetButtonDown("Fire1") && Time.time > nextFire && ammoLoaded > 0 && Time.time > nextReload && !playerHealthController.IsDead())
         {
             nextFire = Time.time + fireRate;
             fire();

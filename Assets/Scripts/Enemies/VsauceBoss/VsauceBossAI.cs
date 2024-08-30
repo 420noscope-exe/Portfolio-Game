@@ -17,6 +17,7 @@ public class VsauceBossAI : MonoBehaviour
     [SerializeField]private GameObject explosionEffect;
     [SerializeField]private GameObject rightHand;
     [SerializeField]private GameObject slagProj;
+
     private AudioSource aSource;
     
     private Animator animator;
@@ -50,6 +51,7 @@ public class VsauceBossAI : MonoBehaviour
         animator = gameObject.GetComponentInChildren<Animator>();
         aSource = gameObject.GetComponent<AudioSource>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+
     }
 
     // Update is called once per frame
