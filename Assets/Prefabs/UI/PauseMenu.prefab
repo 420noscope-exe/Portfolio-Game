@@ -1015,6 +1015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2170911272067111746}
   - component: {fileID: 1485922702023992091}
+  - component: {fileID: 2841098103815494696}
   m_Layer: 5
   m_Name: Sensitivity
   m_TagString: Untagged
@@ -1107,6 +1108,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2841098103815494696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6017291107110879498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060e84390ff151ed5b364d3d1d2c5d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6634024363942004990
 GameObject:
   m_ObjectHideFlags: 0

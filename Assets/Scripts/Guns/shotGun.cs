@@ -7,6 +7,7 @@ public class shotGun : MonoBehaviour, Gun
     private AudioSource aSource;
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject muzzle;
+    private Camera playerCam;
 
     private Animator animator;
 
@@ -16,12 +17,14 @@ public class shotGun : MonoBehaviour, Gun
     int ammoLoaded;
     float reloadTime = 1;
     float nextReload;
+    private int range = 600;
 
     // Start is called before the first frame update
     void Start()
     {
         aSource = gameObject.GetComponent<AudioSource>();
         animator = gameObject.GetComponent<Animator>();
+        playerCam = GameObject.FindWithTag("Player").GetComponentInChildren<Camera>();
     }
 
     // Update is called once per frame
@@ -43,12 +46,19 @@ public class shotGun : MonoBehaviour, Gun
 
     public void fire()
     {
+        Ray ray = new Ray(playerCam.transform.position, playerCam.transform.forward);
+        Physics.Raycast(ray, out RaycastHit hit, range);
         animator.Play("Fire");
         aSource.Play();
-
+        if(hit.point == Vector3.zero)
+        {
+            hit.point = playerCam.transform.position + playerCam.transform.forward * range;
+        }
+        muzzle.transform.LookAt(hit.point);
+        print(muzzle.transform.rotation);
         for(int i=0; i<9; i++)
         {
-            Instantiate(bullet, muzzle.gameObject.transform.position, gameObject.transform.rotation);
+            Instantiate(bullet, muzzle.gameObject.transform.position, Quaternion.LookRotation(muzzle.transform.forward));
         }
         GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * -100f, ForceMode.Impulse);
     }

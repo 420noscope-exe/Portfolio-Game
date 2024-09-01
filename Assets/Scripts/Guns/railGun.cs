@@ -8,7 +8,8 @@ public class railGun : MonoBehaviour, Gun
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject muzzle;
     [SerializeField] private AudioClip chargeSound, fireSound, chargingSound;
-
+    private Camera playerCam;
+    private PlayerHealthController playerHealthController;
     private Animator animator;
 
     float fireRate =  1f/(600f/60f); //value in middle is measured in Rounds per minute
@@ -19,12 +20,15 @@ public class railGun : MonoBehaviour, Gun
     int ammoLoaded;
     float reloadTime = 1;
     float nextReload;
+    private int range = 600;
+
 
     // Start is called before the first frame update
     void Start()
     {
         aSource = gameObject.GetComponent<AudioSource>();
         animator = gameObject.GetComponent<Animator>();
+        playerCam = GameObject.FindWithTag("Player").GetComponentInChildren<Camera>();
         isCharged = false;
         isCharging = false;
     }
@@ -63,11 +67,19 @@ public class railGun : MonoBehaviour, Gun
 
     public void fire()
     {
+        Ray ray = new Ray(playerCam.transform.position, playerCam.transform.forward);
+        Physics.Raycast(ray, out RaycastHit hit, range);
         isCharged = false;
         animator.Play("Fire");
         aSource.clip = fireSound;
         aSource.Play();
-        Instantiate(bullet, muzzle.gameObject.transform.position, gameObject.transform.rotation);
+        if(hit.point == Vector3.zero)
+        {
+            hit.point = playerCam.transform.position + playerCam.transform.forward * range;
+        }
+        muzzle.transform.LookAt(hit.point);
+        print(muzzle.transform.rotation);
+        Instantiate(bullet, muzzle.gameObject.transform.position, Quaternion.LookRotation(muzzle.transform.forward));
     }
 
     public float getAmmo()

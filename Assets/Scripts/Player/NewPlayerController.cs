@@ -193,7 +193,10 @@ public class PlayerController : MonoBehaviour
     //State reset functions
     private void ResetDash()
     {
-        rigidBody.velocity = rigidBody.velocity.normalized * moveSpeed;
+        if(!isJumping)
+        {
+            rigidBody.velocity = rigidBody.velocity.normalized * moveSpeed;
+        }
         isDashing = false;
     }
 
