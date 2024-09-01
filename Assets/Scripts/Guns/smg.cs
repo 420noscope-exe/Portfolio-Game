@@ -8,6 +8,7 @@ public class smg : MonoBehaviour, Gun
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject muzzle;
     private Camera playerCam;
+    private PlayerHealthController playerHealthController;
 
     private Animator animator;
 
@@ -25,14 +26,14 @@ public class smg : MonoBehaviour, Gun
     {
         aSource = gameObject.GetComponent<AudioSource>();
         animator = gameObject.GetComponent<Animator>();
-        //playerHealthController = GameObject.FindWithTag("Player").GetComponent<PlayerHealthController>();
+        playerHealthController = GameObject.FindWithTag("Player").GetComponent<PlayerHealthController>();
         playerCam = GameObject.FindWithTag("Player").GetComponentInChildren<Camera>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetButton("Fire1") && Time.time > nextFire && ammoLoaded > 0 && Time.time > nextReload)
+        if (Input.GetButton("Fire1") && Time.time > nextFire && ammoLoaded > 0 && Time.time > nextReload && !playerHealthController.IsDead())
         {
             nextFire = Time.time + fireRate;
             fire();

@@ -25,13 +25,14 @@ public class rocketLauncher : MonoBehaviour, Gun
     {
         aSource = gameObject.GetComponent<AudioSource>();
         animator = gameObject.GetComponent<Animator>();
+        playerHealthController = GameObject.FindWithTag("Player").GetComponent<PlayerHealthController>();
         playerCam = GameObject.FindWithTag("Player").GetComponentInChildren<Camera>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Time.time > nextFire && ammoLoaded > 0 && Time.time > nextReload)
+        if (Input.GetButtonDown("Fire1") && Time.time > nextFire && ammoLoaded > 0 && Time.time > nextReload && !playerHealthController.IsDead())
         {
             nextFire = Time.time + fireRate;
             fire();

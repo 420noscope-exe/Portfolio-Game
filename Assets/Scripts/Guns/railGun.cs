@@ -28,6 +28,7 @@ public class railGun : MonoBehaviour, Gun
     {
         aSource = gameObject.GetComponent<AudioSource>();
         animator = gameObject.GetComponent<Animator>();
+        playerHealthController = GameObject.FindWithTag("Player").GetComponent<PlayerHealthController>();
         playerCam = GameObject.FindWithTag("Player").GetComponentInChildren<Camera>();
         isCharged = false;
         isCharging = false;
@@ -36,21 +37,21 @@ public class railGun : MonoBehaviour, Gun
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Time.time > nextReload)
+        if (Input.GetButtonDown("Fire1") && Time.time > nextReload && !playerHealthController.IsDead())
         {
             startCharge = Time.time;
             aSource.clip = chargingSound;
             aSource.Play();
             isCharging = true;
         }
-        if (Input.GetButton("Fire1") && isCharging && Time.time > nextReload && Time.time - startCharge >= 1f && isCharged == false)
+        if (Input.GetButton("Fire1") && isCharging && Time.time > nextReload && Time.time - startCharge >= 1f && isCharged == false && !playerHealthController.IsDead())
         {
             print("RailGun is Charged");
             aSource.clip = chargeSound;
             isCharged = true;
             aSource.Play();
         }
-        if (Input.GetButtonUp("Fire1") && Time.time > nextFire && ammoLoaded > 0 && Time.time > nextReload && isCharged)
+        if (Input.GetButtonUp("Fire1") && Time.time > nextFire && ammoLoaded > 0 && Time.time > nextReload && isCharged && !playerHealthController.IsDead())
         {
             nextFire = Time.time + fireRate;
             fire();
