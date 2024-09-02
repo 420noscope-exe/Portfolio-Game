@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 883355409480288425}
   - component: {fileID: 7512110953624438781}
   - component: {fileID: 7741134253640747394}
+  - component: {fileID: 1007903776220807814}
   m_Layer: 11
   m_Name: VsauceBoss
   m_TagString: Untagged
@@ -306,6 +307,20 @@ MonoBehaviour:
   death: {fileID: 8300000, guid: 5d9a3d7c9d6dce198b0f3aedaa36a17b, type: 3}
   hitHurt: {fileID: 0}
   bodyParts: []
+--- !u!114 &1007903776220807814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970826198178749996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d77e91a08c9c70cc90f6bea5dcd8c29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropChance: 100
+  loot: {fileID: 3845482116919117774, guid: bbb88fead8bee7063a4829d29a2d83ad, type: 3}
 --- !u!1001 &5827636800704186751
 PrefabInstance:
   m_ObjectHideFlags: 0

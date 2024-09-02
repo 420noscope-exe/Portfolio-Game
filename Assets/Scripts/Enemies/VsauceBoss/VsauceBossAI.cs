@@ -210,7 +210,7 @@ public class VsauceBossAI : MonoBehaviour
 
     private void slag()
     {
-        timeBetweenAttacks = 5f;
+        timeBetweenAttacks = 4.75f;
         animator.Play("Base.Slag");
         aSource.clip = slagAC;
         aSource.Play();

@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 8704958845401059966}
   - component: {fileID: 4667765414042130034}
   - component: {fileID: 5754869092864411860}
+  - component: {fileID: -4937585880780568741}
   m_Layer: 12
   m_Name: Android
   m_TagString: Enemy
@@ -299,6 +300,20 @@ MonoBehaviour:
   death: {fileID: 0}
   hitHurt: {fileID: 0}
   bodyParts: []
+--- !u!114 &-4937585880780568741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797542097541157363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d77e91a08c9c70cc90f6bea5dcd8c29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropChance: 10
+  loot: {fileID: 3091281693522751418, guid: 2c21e17b9bf3d8560a560e4ec2ce6ed0, type: 3}
 --- !u!1001 &2098594399822623503
 PrefabInstance:
   m_ObjectHideFlags: 0

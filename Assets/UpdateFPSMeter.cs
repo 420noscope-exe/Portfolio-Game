@@ -23,22 +23,25 @@ public class UpdateFPSMeter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        frames[frameIndex] = Time.deltaTime;
-
-        foreach(float frame in frames)
+        if(Time.timeScale != 0f)
         {
-            frameAverage += frame;
-        }
+            frames[frameIndex] = Time.deltaTime;
 
-        frameAverage = frameAverage/frames.Length;
+            foreach(float frame in frames)
+            {
+                frameAverage += frame;
+            }
 
-        //print(1f/Time.deltaTime);
-        fpsText.text = Mathf.RoundToInt(1f/frameAverage).ToString() + " FPS";
+            frameAverage = frameAverage/frames.Length;
 
-        frameIndex++;
-        if(frameIndex > frames.Length - 1)
-        {
-            frameIndex = 0;
+            //print(1f/Time.deltaTime);
+            fpsText.text = Mathf.RoundToInt(1f/frameAverage).ToString() + " FPS";
+
+            frameIndex++;
+            if(frameIndex > frames.Length - 1)
+            {
+                frameIndex = 0;
+            }
         }
     }
 }

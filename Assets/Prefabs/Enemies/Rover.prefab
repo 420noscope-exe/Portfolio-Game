@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6767895571362851538}
   - component: {fileID: 1697690808496493522}
   - component: {fileID: 5595142308664740875}
+  - component: {fileID: -3329668056085441474}
   m_Layer: 12
   m_Name: Rover
   m_TagString: Enemy
@@ -257,6 +258,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &-3329668056085441474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4019008056948668980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d77e91a08c9c70cc90f6bea5dcd8c29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropChance: 10
+  loot: {fileID: 3091281693522751418, guid: 2c21e17b9bf3d8560a560e4ec2ce6ed0, type: 3}
 --- !u!1001 &1794982874800583338
 PrefabInstance:
   m_ObjectHideFlags: 0
