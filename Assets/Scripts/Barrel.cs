@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class barrel : MonoBehaviour, HealthController
+public class Barrel : MonoBehaviour, HealthController
 {
     [SerializeField] private AudioClip clip;
 
@@ -58,7 +58,7 @@ public class barrel : MonoBehaviour, HealthController
         
     }
 
-    void Explode()
+    public void Explode()
     {
         GameObject spawnedEffect = Instantiate(explosionEffect, gameObject.transform.position, gameObject.transform.rotation);
         Collider[] colliders = Physics.OverlapSphere(gameObject.transform.position, radius);

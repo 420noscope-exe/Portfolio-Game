@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.Animations;
-using UnityEngine.InputSystem.iOS;
 
 public class DropLoot : MonoBehaviour
 {

@@ -103,7 +103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies: []
   door: {fileID: 4488331549916737895}
-  cleanupDistance: 64
 --- !u!1 &1247787400708768802
 GameObject:
   m_ObjectHideFlags: 0
@@ -2386,6 +2385,10 @@ PrefabInstance:
     - target: {fileID: 4437214867253847899, guid: ab5bc38eeb1f01170ad4dace54f7f3f8, type: 3}
       propertyPath: m_Name
       value: stairs (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7409217051575737140, guid: ab5bc38eeb1f01170ad4dace54f7f3f8, type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
